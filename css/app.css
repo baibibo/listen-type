@@ -432,7 +432,23 @@ a { color: var(--cyan); }
   padding: 12px 14px;
   min-width: 108px;
   max-width: 260px;
+  min-height: 44px;
   text-align: center;
+}
+button.analysis-card {
+  appearance: none;
+  color: inherit;
+  font: inherit;
+  cursor: pointer;
+}
+button.analysis-card:hover,
+button.analysis-card:focus-visible {
+  border-color: var(--cyan);
+}
+button.analysis-card:active,
+button.analysis-card.playing {
+  border-color: var(--cyan);
+  box-shadow: 0 0 0 1px rgba(62, 198, 240, 0.45);
 }
 .ac-word { color: var(--cyan); font-size: 20px; font-weight: 700; }
 .ac-ipa { color: var(--muted); font-size: 13px; margin-top: 4px; }

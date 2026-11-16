@@ -41,6 +41,7 @@ const state = {
   adding: false,
   selectedWordI: null,
   showAnalysis: false,
+  playingTokenIndex: null,
   lessonId: 1,
   lessonProg: { listened: [], completed: [], hard: [], lastIndex: 0 },
   order: [],
@@ -51,6 +52,7 @@ const appEl = document.getElementById("app");
 const toastEl = document.getElementById("toast");
 let toastTimer = 0;
 let awaitingAuto = false;
+let playIntent = "clip";
 
 function escapeHtml(value) {
   return String(value ?? "")
@@ -197,12 +199,14 @@ function resetPractice(nextIndex = state.index, nextScreen = state.screen, nextM
   state.cnStatus = "";
   state.selectedWordI = null;
   state.showAnalysis = false;
+  state.playingTokenIndex = null;
 }
 
 function stopPlay() {
   awaitingAuto = false;
   if (player) player.pause();
   state.playing = false;
+  state.playingTokenIndex = null;
 }
 
 function markListened(itemIndex = state.index, scene = state.screen) {
@@ -215,9 +219,11 @@ function markListened(itemIndex = state.index, scene = state.screen) {
   });
 }
 
-function playKey(key) {
+function playKey(key, opts = {}) {
   if (!player) return;
   awaitingAuto = false;
+  playIntent = opts.asSentence ? "sentence" : "clip";
+  state.playingTokenIndex = opts.tokenIndex ?? null;
   player.pause();
   player.src = audioUrl(key);
   const p = player.play();
@@ -225,14 +231,21 @@ function playKey(key) {
     p.then(() => {
       state.playing = true;
       syncPlayingUi();
-    }).catch(() => showToast("请再点一次播放"));
+    }).catch((err) => {
+      if (err && err.name === "AbortError") return;
+      state.playing = false;
+      state.playingTokenIndex = null;
+      syncPlayingUi();
+      if (player.error) return;
+      showToast("请再点一次播放");
+    });
   }
 }
 
 function playSentence(itemIndex = state.index, scene = state.screen) {
   const cur = items()[itemIndex];
   if (!cur) return;
-  playKey(slug(cur.en));
+  playKey(slug(cur.en), { asSentence: true });
   markListened(itemIndex, scene);
 }
 
@@ -417,7 +430,9 @@ function checkCn() {
 
 function onAudioEnded() {
   state.playing = false;
+  state.playingTokenIndex = null;
   syncPlayingUi();
+  if (playIntent !== "sentence") return;
   if (state.screen !== "car-listen" || !state.autoplay) return;
   if (state.memberId != null) {
     patch(state.memberId, { itemIndex: state.index, lastScene: "car-listen", listened: true });
@@ -439,7 +454,7 @@ function onAudioEnded() {
       const nxt = items()[next];
       render();
       if (nxt) {
-        playKey(slug(nxt.en));
+        playKey(slug(nxt.en), { asSentence: true });
         if (state.memberId != null) {
           patch(state.memberId, { itemIndex: next, lastScene: "car-listen", listened: true });
         }
@@ -458,7 +473,7 @@ function onAudioEnded() {
       const nxt = items()[next];
       render();
       if (nxt) {
-        playKey(slug(nxt.en));
+        playKey(slug(nxt.en), { asSentence: true });
         if (state.memberId != null) {
           patch(state.memberId, { itemIndex: next, lastScene: "car-listen", listened: true });
         }
@@ -475,15 +490,19 @@ function analysisPanel(item) {
     return `<p class="muted" style="text-align:center">这句还没有解析。</p>`;
   }
   const cards = (analysis.tokens || [])
-    .map((token) => {
+    .map((token, i) => {
       const role = token.role ? `<span class="ac-role">${escapeHtml(token.role)}</span>` : "";
       const note = token.note ? `<div class="ac-note">${escapeHtml(token.note)}</div>` : "";
-      return `<div class="analysis-card">
-        <div class="ac-word">${escapeHtml(token.text)}</div>
+      const playing = state.playing && state.playingTokenIndex === i ? " playing" : "";
+      const body = `<div class="ac-word">${escapeHtml(token.text)}</div>
         <div class="ac-ipa">${escapeHtml(token.ipa || "")}</div>
         <div class="ac-meta"><span>${escapeHtml(token.pos || "")}</span>${role}</div>
-        ${note}
-      </div>`;
+        ${note}`;
+      const key = slug(token.text || "");
+      if (!/[A-Za-z]/.test(token.text || "") || !key) {
+        return `<div class="analysis-card">${body}</div>`;
+      }
+      return `<button type="button" class="analysis-card${playing}" data-act="play-token" data-token-i="${i}" data-key="${escapeHtml(key)}" aria-label="播放 ${escapeHtml(token.text)}">${body}</button>`;
     })
     .join("");
   const tip = analysis.tip ? `<p class="analysis-tip">${escapeHtml(analysis.tip)}</p>` : "";
@@ -900,9 +919,14 @@ function focusActiveInput() {
 
 function syncPlayingUi() {
   const btn = document.getElementById("playBtn");
-  if (!btn) return;
-  btn.classList.toggle("playing", state.playing);
-  btn.innerHTML = state.playing ? ICON_PAUSE : ICON_PLAY;
+  if (btn) {
+    btn.classList.toggle("playing", state.playing);
+    btn.innerHTML = state.playing ? ICON_PAUSE : ICON_PLAY;
+  }
+  document.querySelectorAll(".analysis-card[data-token-i]").forEach((el) => {
+    const i = Number(el.getAttribute("data-token-i"));
+    el.classList.toggle("playing", !!state.playing && state.playingTokenIndex === i);
+  });
 }
 
 function render() {
@@ -976,6 +1000,13 @@ function handleAct(act, target) {
     if (!item || !Number.isFinite(i) || !item.words[i]) return;
     state.selectedWordI = i;
     playKey(slug(item.words[i]));
+    return render();
+  }
+  if (act === "play-token") {
+    const key = target.getAttribute("data-key");
+    const i = Number(target.getAttribute("data-token-i"));
+    if (!key) return;
+    playKey(key, { tokenIndex: Number.isFinite(i) ? i : null });
     return render();
   }
   if (act === "prev") return goItem(-1);
@@ -1087,7 +1118,12 @@ player.addEventListener("pause", () => {
 player.addEventListener("ended", onAudioEnded);
 player.addEventListener("error", () => {
   state.playing = false;
+  state.playingTokenIndex = null;
   syncPlayingUi();
+  if (playIntent === "clip") {
+    showToast("暂无这个词的发音");
+    return;
+  }
   if (state.screen === "car-listen" && state.autoplay) {
     onAudioEnded();
   }
