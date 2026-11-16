@@ -23971,7 +23971,7 @@
           "用"
         ],
         "ipa": [
-          "/juz/"
+          "/juːz/"
         ],
         "pos": [
           "动词"
@@ -23980,7 +23980,7 @@
           "tokens": [
             {
               "text": "use",
-              "ipa": "/juz/",
+              "ipa": "/juːz/",
               "pos": "动词",
               "role": "单词",
               "words": [
@@ -45496,7 +45496,7 @@
           "用"
         ],
         "ipa": [
-          "/juz/"
+          "/juːz/"
         ],
         "pos": [
           "动词"
@@ -45505,7 +45505,7 @@
           "tokens": [
             {
               "text": "use",
-              "ipa": "/juz/",
+              "ipa": "/juːz/",
               "pos": "动词",
               "role": "单词",
               "words": [
@@ -54906,10 +54906,10 @@
               "words": [
                 "React"
               ],
-              "note": "常用的前端库。"
+              "note": "常用的前端库，不是日常动词「反应」。"
             }
           ],
-          "tip": "React 是常用的前端库，写页面组件时会经常看到。"
+          "tip": "这里的 React 是常用的前端库，用来写页面组件，不是日常动词「反应」。"
         },
         "index": 0
       },
@@ -56318,7 +56318,7 @@
         ],
         "ipa": [
           "/aɪ/",
-          "/juz/",
+          "/juːz/",
           "/riˈækt/",
           "/ænd/",
           "/ˈtaɪpˌskrɪpt/"
@@ -56348,7 +56348,7 @@
             },
             {
               "text": "use",
-              "ipa": "/juz/",
+              "ipa": "/juːz/",
               "pos": "动词",
               "words": [
                 "use"
@@ -56363,7 +56363,7 @@
                 "React"
               ],
               "role": "宾语",
-              "note": "常用的前端库。"
+              "note": "常用的前端库，不是日常动词「反应」。"
             },
             {
               "text": "and",
@@ -57002,7 +57002,7 @@
         ],
         "ipa": [
           "/aɪ/",
-          "/juz/",
+          "/juːz/",
           "/ˈnɛkst dʒeɪ ˈɛs/",
           "/fɔr/",
           "/ðə/",
@@ -57034,7 +57034,7 @@
             },
             {
               "text": "use",
-              "ipa": "/juz/",
+              "ipa": "/juːz/",
               "pos": "动词",
               "words": [
                 "use"
@@ -57975,7 +57975,7 @@
           "/ɪz/",
           "/ˈizi/",
           "/tuː/",
-          "/juz/"
+          "/juːz/"
         ],
         "pos": [
           "代词",
@@ -58012,7 +58012,7 @@
             },
             {
               "text": "easy to use",
-              "ipa": "/ˈizi tuː juz/",
+              "ipa": "/ˈizi tuː juːz/",
               "pos": "词组",
               "words": [
                 "easy",
@@ -64016,7 +64016,7 @@
           "variable"
         ],
         "ipa": [
-          "/juz/",
+          "/juːz/",
           "/vɑr/",
           "/tuː/",
           "/dɪˈklɛr/",
@@ -64040,7 +64040,7 @@
           "tokens": [
             {
               "text": "Use",
-              "ipa": "/juz/",
+              "ipa": "/juːz/",
               "pos": "动词",
               "words": [
                 "Use"
@@ -64300,7 +64300,7 @@
           "loop"
         ],
         "ipa": [
-          "/juz/",
+          "/juːz/",
           "/kənˈtɪnjuː/",
           "/ɪn/",
           "/ðə/",
@@ -64322,7 +64322,7 @@
           "tokens": [
             {
               "text": "Use",
-              "ipa": "/juz/",
+              "ipa": "/juːz/",
               "pos": "动词",
               "words": [
                 "Use"
@@ -64596,7 +64596,7 @@
           "object"
         ],
         "ipa": [
-          "/juz/",
+          "/juːz/",
           "/nuː/",
           "/tuː/",
           "/kriˈeɪt/",
@@ -64620,7 +64620,7 @@
           "tokens": [
             {
               "text": "Use",
-              "ipa": "/juz/",
+              "ipa": "/juːz/",
               "pos": "动词",
               "words": [
                 "Use"
@@ -64748,7 +64748,7 @@
           "function"
         ],
         "ipa": [
-          "/juz/",
+          "/juːz/",
           "/dɛf/",
           "/tuː/",
           "/dɪˈfaɪn/",
@@ -64772,7 +64772,7 @@
           "tokens": [
             {
               "text": "Use",
-              "ipa": "/juz/",
+              "ipa": "/juːz/",
               "pos": "动词",
               "words": [
                 "Use"
@@ -64828,7 +64828,7 @@
           "function"
         ],
         "ipa": [
-          "/juz/",
+          "/juːz/",
           "/fʌŋk/",
           "/tuː/",
           "/dɪˈfaɪn/",
@@ -64852,7 +64852,7 @@
           "tokens": [
             {
               "text": "Use",
-              "ipa": "/juz/",
+              "ipa": "/juːz/",
               "pos": "动词",
               "words": [
                 "Use"
@@ -65391,7 +65391,7 @@
           "method"
         ],
         "ipa": [
-          "/juz/",
+          "/juːz/",
           "/sɛlf/",
           "/ɪn/",
           "/ðɪs/",
@@ -65413,7 +65413,7 @@
           "tokens": [
             {
               "text": "Use",
-              "ipa": "/juz/",
+              "ipa": "/juːz/",
               "pos": "动词",
               "words": [
                 "Use"
@@ -65523,7 +65523,7 @@
           "inheritance"
         ],
         "ipa": [
-          "/juz/",
+          "/juːz/",
           "/ˌkɑmpəˈzɪʃən/",
           "/ɪnˈstɛd/",
           "/əv/",
@@ -65545,7 +65545,7 @@
           "tokens": [
             {
               "text": "Use",
-              "ipa": "/juz/",
+              "ipa": "/juːz/",
               "pos": "动词",
               "words": [
                 "Use"

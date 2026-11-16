@@ -368,6 +368,14 @@ footer.bar button {
   color: var(--muted);
   font-size: 12px;
 }
+
+.autoplay-cue {
+  text-align: center;
+  margin: 8px 0 0;
+  color: var(--cyan);
+  font-size: 14px;
+  font-weight: 600;
+}
 a { color: var(--cyan); }
 
 .ipa, .ac-ipa {

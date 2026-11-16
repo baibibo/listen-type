@@ -1,4 +1,4 @@
-const CACHE = "listen-type-pages-v4";
+const CACHE = "listen-type-pages-v5";
 const SHELL = [
   "./",
   "./index.html",
@@ -28,57 +28,61 @@ self.addEventListener("activate", (event) => {
   );
 });
 
+function isServiceWorkerScript(url) {
+  return /\/sw\.js$/i.test(url.pathname);
+}
+
+function isAudio(url) {
+  return /\/audio\//.test(url.pathname);
+}
+
+function revalidateRequest(req) {
+  try {
+    if (req.mode === "navigate") return req;
+    return new Request(req, { cache: "no-cache" });
+  } catch {
+    return req;
+  }
+}
+
+function networkFirst(req, fallbackUrl) {
+  return fetch(revalidateRequest(req))
+    .then((res) => {
+      if (res && res.ok) {
+        const copy = res.clone();
+        caches.open(CACHE).then((cache) => cache.put(req, copy));
+      }
+      return res;
+    })
+    .catch(() =>
+      caches.match(req).then((cached) => cached || (fallbackUrl ? caches.match(fallbackUrl) : undefined))
+    );
+}
+
+function cacheFirst(req) {
+  return caches.match(req).then((cached) => {
+    if (cached) return cached;
+    return fetch(req).then((res) => {
+      if (res && res.ok) {
+        const copy = res.clone();
+        caches.open(CACHE).then((cache) => cache.put(req, copy));
+      }
+      return res;
+    });
+  });
+}
+
 self.addEventListener("fetch", (event) => {
   const req = event.request;
   if (req.method !== "GET") return;
   const url = new URL(req.url);
   if (url.origin !== self.location.origin) return;
+  if (isServiceWorkerScript(url)) return;
 
-  const isAudio = /\/audio\//.test(url.pathname);
-  if (isAudio) {
-    event.respondWith(
-      fetch(req)
-        .then((res) => {
-          if (res.ok) {
-            const copy = res.clone();
-            caches.open(CACHE).then((cache) => cache.put(req, copy));
-          }
-          return res;
-        })
-        .catch(() => caches.match(req))
-    );
+  if (isAudio(url)) {
+    event.respondWith(cacheFirst(req));
     return;
   }
 
-  const isShell =
-    url.pathname.endsWith("/") ||
-    url.pathname.endsWith(".html") ||
-    url.pathname.endsWith(".css") ||
-    url.pathname.endsWith(".js") ||
-    url.pathname.endsWith(".json") ||
-    url.pathname.endsWith(".webmanifest") ||
-    url.pathname.endsWith(".png") ||
-    url.pathname.endsWith(".jpg") ||
-    url.pathname.endsWith(".jpeg") ||
-    url.pathname.endsWith(".webp") ||
-    url.pathname.endsWith(".svg") ||
-    url.pathname.endsWith(".ico");
-
-  if (isShell) {
-    event.respondWith(
-      caches.match(req).then((cached) => {
-        if (cached) return cached;
-        return fetch(req)
-          .then((res) => {
-            if (res.ok) {
-              const copy = res.clone();
-              caches.open(CACHE).then((cache) => cache.put(req, copy));
-            }
-            return res;
-          })
-          .catch(() => caches.match("./index.html"));
-      })
-    );
-    return;
-  }
+  event.respondWith(networkFirst(req, "./index.html"));
 });

@@ -1,5 +1,5 @@
 import { assetUrl } from "./paths.js";
-import { slug, normEn, normCn, sceneLabel } from "./norm.js";
+import { slug, normEn, normCn, sceneLabel, promptCnForEnglish } from "./norm.js";
 import {
   MEMBER_KEY,
   GOAL,
@@ -13,6 +13,8 @@ import {
 } from "./store.js";
 
 const AUTOPLAY_GAP = 650;
+let playGen = 0;
+let autoTimer = 0;
 const PREFERRED_CATEGORIES = ["生活", "入门", "基础", "出行", "办公室", "邮件", "IT", "综合"];
 const ICON_PLAY = '<svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z" /></svg>';
 const ICON_PAUSE = '<svg viewBox="0 0 24 24"><path d="M7 5h3v14H7zm7 0h3v14h-3z" /></svg>';
@@ -29,6 +31,7 @@ const state = {
   index: 0,
   homeMode: "learn",
   autoplay: true,
+  autoplayCue: false,
   loop: true,
   showEn: true,
   playing: false,
@@ -203,7 +206,12 @@ function resetPractice(nextIndex = state.index, nextScreen = state.screen, nextM
 }
 
 function stopPlay() {
+  playGen += 1;
   awaitingAuto = false;
+  if (autoTimer) {
+    window.clearTimeout(autoTimer);
+    autoTimer = 0;
+  }
   if (player) player.pause();
   state.playing = false;
   state.playingTokenIndex = null;
@@ -220,21 +228,40 @@ function markListened(itemIndex = state.index, scene = state.screen) {
 }
 
 function playKey(key, opts = {}) {
-  if (!player) return;
+  if (!player) {
+    if (state.screen === "car-listen") {
+      state.autoplayCue = true;
+      syncPlayingUi();
+    }
+    return;
+  }
+  const gen = playGen;
   awaitingAuto = false;
   playIntent = opts.asSentence ? "sentence" : "clip";
   state.playingTokenIndex = opts.tokenIndex ?? null;
+  state.autoplayCue = false;
   player.pause();
   player.src = audioUrl(key);
   const p = player.play();
   if (p) {
     p.then(() => {
+      if (gen !== playGen) {
+        player.pause();
+        return;
+      }
       state.playing = true;
+      state.autoplayCue = false;
       syncPlayingUi();
     }).catch((err) => {
+      if (gen !== playGen) return;
       if (err && err.name === "AbortError") return;
       state.playing = false;
       state.playingTokenIndex = null;
+      if (err && err.name === "NotAllowedError" && state.screen === "car-listen") {
+        state.autoplayCue = true;
+        syncPlayingUi();
+        return;
+      }
       syncPlayingUi();
       if (player.error) return;
       showToast("请再点一次播放");
@@ -265,6 +292,7 @@ function goLessons() {
 }
 
 function openMember(id) {
+  stopPlay();
   state.memberId = id;
   window.localStorage.setItem(MEMBER_KEY, String(id));
   state.screen = "lessons";
@@ -291,6 +319,7 @@ function selectLesson(id, mid) {
 }
 
 function openLesson(id) {
+  stopPlay();
   if (!state.memberId) return;
   try {
     selectLesson(id, state.memberId);
@@ -319,6 +348,11 @@ function openScreen(name, atIndex = state.index, mode = "keep") {
   state.index = start;
   resetPractice(start, name, state.homeMode);
   if (state.memberId) patch(state.memberId, { itemIndex: start, lastScene: name });
+  if (name === "car-listen" && state.autoplay) {
+    playSentence(start, "car-listen");
+  } else {
+    state.autoplayCue = false;
+  }
   render();
 }
 
@@ -440,45 +474,33 @@ function onAudioEnded() {
   const curPos = sessionOrder().indexOf(state.index);
   const seq = sessionOrder();
   const hasNext = curPos >= 0 && curPos < seq.length - 1;
-  if (hasNext) {
+  const advance = (nextIndex, nextOrder) => {
+    const scheduledGen = playGen;
     awaitingAuto = true;
-    window.setTimeout(() => {
+    if (autoTimer) window.clearTimeout(autoTimer);
+    autoTimer = window.setTimeout(() => {
+      autoTimer = 0;
+      if (playGen !== scheduledGen) return;
       if (!awaitingAuto || state.screen !== "car-listen") return;
-      const pos = sessionOrder().indexOf(state.index);
-      const orderNow = sessionOrder();
-      if (pos < 0 || pos >= orderNow.length - 1) return;
-      const next = orderNow[pos + 1];
-      state.index = next;
-      resetPractice(next, "car-listen", state.homeMode);
-      if (state.memberId != null) patch(state.memberId, { itemIndex: next, lastScene: "car-listen" });
-      const nxt = items()[next];
+      if (nextOrder) state.order = nextOrder;
+      state.index = nextIndex;
+      resetPractice(nextIndex, "car-listen", state.homeMode);
+      if (state.memberId != null) patch(state.memberId, { itemIndex: nextIndex, lastScene: "car-listen" });
+      const nxt = items()[nextIndex];
       render();
-      if (nxt) {
+      if (nxt && state.screen === "car-listen" && playGen === scheduledGen) {
         playKey(slug(nxt.en), { asSentence: true });
-        if (state.memberId != null) {
-          patch(state.memberId, { itemIndex: next, lastScene: "car-listen", listened: true });
+        if (state.screen === "car-listen" && playGen === scheduledGen && state.memberId != null) {
+          patch(state.memberId, { itemIndex: nextIndex, lastScene: "car-listen", listened: true });
         }
       }
     }, AUTOPLAY_GAP);
+  };
+  if (hasNext) {
+    advance(seq[curPos + 1]);
   } else if (state.loop && items().length > 0) {
     const nextOrder = makeOrder(items().length);
-    const next = nextOrder[0] ?? 0;
-    awaitingAuto = true;
-    window.setTimeout(() => {
-      if (!awaitingAuto || state.screen !== "car-listen") return;
-      state.order = nextOrder;
-      state.index = next;
-      resetPractice(next, "car-listen", state.homeMode);
-      if (state.memberId != null) patch(state.memberId, { itemIndex: next, lastScene: "car-listen" });
-      const nxt = items()[next];
-      render();
-      if (nxt) {
-        playKey(slug(nxt.en), { asSentence: true });
-        if (state.memberId != null) {
-          patch(state.memberId, { itemIndex: next, lastScene: "car-listen", listened: true });
-        }
-      }
-    }, AUTOPLAY_GAP);
+    advance(nextOrder[0] ?? 0, nextOrder);
   } else {
     showToast("今天的车上听力已经听完");
   }
@@ -623,7 +645,11 @@ function renderFamily() {
     .map((m) => {
       const bits = [];
       if ((m.todayListen || 0) > 0 && (m.todayType || 0) === 0) {
-        bits.push(`车上已听 ${m.todayListen} 句，回家可以用电脑打字`);
+        if (m.lastScene === "car-listen" || m.lastScene === "car-type") {
+          bits.push(`车上已听 ${m.todayListen} 句，回家可以用电脑打字`);
+        } else {
+          bits.push(`今天已听 ${m.todayListen} 句`);
+        }
       } else if ((m.todayType || 0) > 0) {
         bits.push(`今天已听 ${m.todayListen || 0}、打对 ${m.todayType} 句`);
       } else {
@@ -703,7 +729,7 @@ function renderScene() {
   const last = list[state.lessonProg.lastIndex] || list[0];
   const isCurrentLast = (member.lastLessonId || 1) === state.lessonId;
   const resumeIndex = state.lessonProg.lastIndex || 0;
-  const listenedNote = state.lessonProg.listened.includes(resumeIndex) ? " · 车上已听过" : "";
+  const listenedNote = state.lessonProg.listened.includes(resumeIndex) ? " · 已听过" : "";
   const defaultCar = isCurrentLast && member.lastScene === "car-type" ? "car-type" : "car-listen";
 
   return `<div class="page">
@@ -750,6 +776,7 @@ function renderCarListen() {
     <button class="playbig ${state.playing ? "playing" : ""}" id="playBtn" type="button" aria-label="播放" data-act="toggle-play">
       ${state.playing ? ICON_PAUSE : ICON_PLAY}
     </button>
+    ${!state.playing && state.autoplayCue ? '<p class="autoplay-cue">点一下开始连播</p>' : ""}
     <div class="car-ctrls">
       <button type="button" data-act="prev">上一句</button>
       <button type="button" data-act="toggle-autoplay">${state.autoplay ? "连播开" : "连播关"}</button>
@@ -773,7 +800,7 @@ function renderCarType() {
   const hint = curI < 0 ? "全部正确" : state.statuses.includes("bad") ? "不对，再试一次" : "";
   const inner = `
     <img class="art" alt="" src="${escapeHtml(imageUrl(item.image))}" data-act="play-sentence">
-    <p class="cn">${escapeHtml(item.cn)}${kindBadge(item)}${speakBtn()}</p>
+    <p class="cn">${escapeHtml(promptCnForEnglish(item))}${kindBadge(item)}${speakBtn()}</p>
     ${renderWords()}
     <div class="hint ${hintCls}">${escapeHtml(hint)}</div>
     ${analysisToggle(item, curI < 0)}
@@ -826,7 +853,7 @@ function renderHome() {
       .join("")}</div>`;
     stage = `
       <img class="art" alt="" src="${escapeHtml(imageUrl(item.image))}" data-act="play-sentence">
-      <p class="cn">${escapeHtml(item.cn)}${kindBadge(item)}${speakBtn()}${listenedHere ? '<span class="badge">车上已听</span>' : ""}</p>
+      <p class="cn">${escapeHtml(item.cn)}${kindBadge(item)}${speakBtn()}${listenedHere ? '<span class="badge">已听</span>' : ""}</p>
       ${enLine}
       ${study}
       <div class="row" style="justify-content:center;margin-top:16px">
@@ -855,10 +882,10 @@ function renderHome() {
     const hideCn = state.homeMode === "listen";
     const curI = currentWordIndex();
     const hint = curI < 0 ? "全部正确" : state.statuses.includes("bad") ? "不对，再试一次" : "";
-    const badge = !hideCn && listenedHere ? '<span class="badge">车上已听</span>' : "";
+    const badge = !hideCn && listenedHere ? '<span class="badge">已听</span>' : "";
     stage = `
       <img class="art" alt="" src="${escapeHtml(imageUrl(item.image))}" data-act="play-sentence">
-      <p class="cn">${hideCn ? "只听发音，按单词输入英文" : escapeHtml(item.cn)}${kindBadge(item)}${badge}${speakBtn()}</p>
+      <p class="cn">${hideCn ? "只听发音，按单词输入英文" : escapeHtml(state.homeMode === "cn2en" ? promptCnForEnglish(item) : item.cn)}${kindBadge(item)}${badge}${speakBtn()}</p>
       ${renderWords()}
       <div class="hint ${curI < 0 ? "ok" : ""}">${escapeHtml(hint)}</div>
       ${analysisToggle(item, curI < 0)}`;
@@ -1131,7 +1158,21 @@ player.addEventListener("error", () => {
 
 function registerSw() {
   if (!("serviceWorker" in navigator)) return;
-  navigator.serviceWorker.register(assetUrl("sw.js")).catch(() => {});
+  let reloading = false;
+  navigator.serviceWorker.addEventListener("controllerchange", () => {
+    if (reloading) return;
+    reloading = true;
+    window.location.reload();
+  });
+  navigator.serviceWorker
+    .register(assetUrl("sw.js"))
+    .then((reg) => {
+      void reg.update();
+      document.addEventListener("visibilitychange", () => {
+        if (!document.hidden) void reg.update();
+      });
+    })
+    .catch(() => {});
 }
 
 async function boot() {
