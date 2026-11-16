@@ -61407,5 +61407,4511 @@
         "index": 70
       }
     ]
+  },
+  {
+    "id": 23,
+    "code": "031",
+    "category": "IT",
+    "titleEn": "Keywords",
+    "titleCn": "编程关键字",
+    "image": "keywords.jpg",
+    "items": [
+      {
+        "kind": "word",
+        "en": "let",
+        "cn": "let（声明变量）",
+        "image": "keywords.jpg",
+        "words": [
+          "let"
+        ],
+        "ipa": [
+          "/lɛt/"
+        ],
+        "pos": [
+          "关键字"
+        ],
+        "aliases": [
+          "let",
+          "声明变量",
+          "用let声明"
+        ],
+        "analysis": {
+          "tokens": [
+            {
+              "text": "let",
+              "ipa": "/lɛt/",
+              "pos": "关键字",
+              "role": "单词",
+              "words": [
+                "let"
+              ],
+              "note": "声明变量的关键字，不是「让」。"
+            }
+          ],
+          "tip": "这里的 let 是编程里用来声明变量的关键字，比如 let name = 'Ada'。不是第 14 课里日常英语「让」的意思。"
+        },
+        "index": 0
+      },
+      {
+        "kind": "word",
+        "en": "var",
+        "cn": "var（声明变量）",
+        "image": "keywords.jpg",
+        "words": [
+          "var"
+        ],
+        "ipa": [
+          "/vɑr/"
+        ],
+        "pos": [
+          "关键字"
+        ],
+        "aliases": [
+          "var",
+          "声明变量",
+          "用var声明"
+        ],
+        "analysis": {
+          "tokens": [
+            {
+              "text": "var",
+              "ipa": "/vɑr/",
+              "pos": "关键字",
+              "role": "单词",
+              "words": [
+                "var"
+              ],
+              "note": "声明变量的旧写法。"
+            }
+          ],
+          "tip": "var 也是声明变量的关键字，在 JavaScript 里比 let 更旧，现在更常用 let 或 const。"
+        },
+        "index": 1
+      },
+      {
+        "kind": "word",
+        "en": "void",
+        "cn": "void（无返回值）",
+        "image": "keywords.jpg",
+        "words": [
+          "void"
+        ],
+        "ipa": [
+          "/vɔɪd/"
+        ],
+        "pos": [
+          "关键字"
+        ],
+        "aliases": [
+          "void",
+          "无返回值",
+          "空返回"
+        ],
+        "analysis": {
+          "tokens": [
+            {
+              "text": "void",
+              "ipa": "/vɔɪd/",
+              "pos": "关键字",
+              "role": "单词",
+              "words": [
+                "void"
+              ],
+              "note": "表示没有返回值。"
+            }
+          ],
+          "tip": "void 表示没有返回值，常见于函数类型，比如 function log(): void。不是日常说的「空的」。"
+        },
+        "index": 2
+      },
+      {
+        "kind": "word",
+        "en": "int",
+        "cn": "int（整数类型）",
+        "image": "keywords.jpg",
+        "words": [
+          "int"
+        ],
+        "ipa": [
+          "/ɪnt/"
+        ],
+        "pos": [
+          "关键字"
+        ],
+        "aliases": [
+          "int",
+          "整数",
+          "整型"
+        ],
+        "analysis": {
+          "tokens": [
+            {
+              "text": "int",
+              "ipa": "/ɪnt/",
+              "pos": "关键字",
+              "role": "单词",
+              "words": [
+                "int"
+              ],
+              "note": "整数类型。"
+            }
+          ],
+          "tip": "int 表示整数类型，在 Java、Go、C 和类型声明里都很常见。"
+        },
+        "index": 3
+      },
+      {
+        "kind": "word",
+        "en": "float",
+        "cn": "float（浮点类型）",
+        "image": "keywords.jpg",
+        "words": [
+          "float"
+        ],
+        "ipa": [
+          "/floʊt/"
+        ],
+        "pos": [
+          "关键字"
+        ],
+        "aliases": [
+          "float",
+          "浮点数",
+          "浮点型"
+        ],
+        "analysis": {
+          "tokens": [
+            {
+              "text": "float",
+              "ipa": "/floʊt/",
+              "pos": "关键字",
+              "role": "单词",
+              "words": [
+                "float"
+              ],
+              "note": "浮点数类型。"
+            }
+          ],
+          "tip": "float 表示浮点数类型，也就是带小数的数字。"
+        },
+        "index": 4
+      },
+      {
+        "kind": "word",
+        "en": "if",
+        "cn": "if（如果）",
+        "image": "keywords.jpg",
+        "words": [
+          "if"
+        ],
+        "ipa": [
+          "/ɪf/"
+        ],
+        "pos": [
+          "关键字"
+        ],
+        "aliases": [
+          "if",
+          "如果"
+        ],
+        "analysis": {
+          "tokens": [
+            {
+              "text": "if",
+              "ipa": "/ɪf/",
+              "pos": "关键字",
+              "role": "单词",
+              "words": [
+                "if"
+              ],
+              "note": "条件分支关键字。"
+            }
+          ],
+          "tip": "if 用来按条件分支：条件成立就执行后面的代码，读写代码和报错时都会经常看到。"
+        },
+        "index": 5
+      },
+      {
+        "kind": "word",
+        "en": "else",
+        "cn": "else（否则）",
+        "image": "keywords.jpg",
+        "words": [
+          "else"
+        ],
+        "ipa": [
+          "/ɛls/"
+        ],
+        "pos": [
+          "关键字"
+        ],
+        "aliases": [
+          "else",
+          "否则"
+        ],
+        "analysis": {
+          "tokens": [
+            {
+              "text": "else",
+              "ipa": "/ɛls/",
+              "pos": "关键字",
+              "role": "单词",
+              "words": [
+                "else"
+              ],
+              "note": "if 的否则分支。"
+            }
+          ],
+          "tip": "else 表示「否则」，跟在 if 后面，条件不成立时就走这个分支。"
+        },
+        "index": 6
+      },
+      {
+        "kind": "word",
+        "en": "elif",
+        "cn": "elif（否则如果）",
+        "image": "keywords.jpg",
+        "words": [
+          "elif"
+        ],
+        "ipa": [
+          "/ˈɛlɪf/"
+        ],
+        "pos": [
+          "关键字"
+        ],
+        "aliases": [
+          "elif",
+          "else if",
+          "elseif",
+          "否则如果"
+        ],
+        "analysis": {
+          "tokens": [
+            {
+              "text": "elif",
+              "ipa": "/ˈɛlɪf/",
+              "pos": "关键字",
+              "role": "单词",
+              "words": [
+                "elif"
+              ],
+              "note": "Python 里的 else if。"
+            }
+          ],
+          "tip": "elif 是 Python 里的「否则如果」，相当于其他语言的 else if。"
+        },
+        "index": 7
+      },
+      {
+        "kind": "word",
+        "en": "switch",
+        "cn": "switch（分支）",
+        "image": "keywords.jpg",
+        "words": [
+          "switch"
+        ],
+        "ipa": [
+          "/swɪtʃ/"
+        ],
+        "pos": [
+          "关键字"
+        ],
+        "aliases": [
+          "switch",
+          "分支",
+          "开关分支"
+        ],
+        "analysis": {
+          "tokens": [
+            {
+              "text": "switch",
+              "ipa": "/swɪtʃ/",
+              "pos": "关键字",
+              "role": "单词",
+              "words": [
+                "switch"
+              ],
+              "note": "多路分支关键字，不是「开关」。"
+            }
+          ],
+          "tip": "这里的 switch 按不同条件走不同分支，常和 case、default 一起出现，不是墙上的「开关」。"
+        },
+        "index": 8
+      },
+      {
+        "kind": "word",
+        "en": "case",
+        "cn": "case（分支条件）",
+        "image": "keywords.jpg",
+        "words": [
+          "case"
+        ],
+        "ipa": [
+          "/keɪs/"
+        ],
+        "pos": [
+          "关键字"
+        ],
+        "aliases": [
+          "case",
+          "分支条件",
+          "情况分支"
+        ],
+        "analysis": {
+          "tokens": [
+            {
+              "text": "case",
+              "ipa": "/keɪs/",
+              "pos": "关键字",
+              "role": "单词",
+              "words": [
+                "case"
+              ],
+              "note": "switch 里的分支条件。"
+            }
+          ],
+          "tip": "这里的 case 是 switch 里的一个分支条件，不是「箱子」，也不只是泛泛的「情况」。"
+        },
+        "index": 9
+      },
+      {
+        "kind": "word",
+        "en": "default",
+        "cn": "default（默认分支）",
+        "image": "keywords.jpg",
+        "words": [
+          "default"
+        ],
+        "ipa": [
+          "/dɪˈfɔlt/"
+        ],
+        "pos": [
+          "关键字"
+        ],
+        "aliases": [
+          "default",
+          "默认分支",
+          "默认"
+        ],
+        "analysis": {
+          "tokens": [
+            {
+              "text": "default",
+              "ipa": "/dɪˈfɔlt/",
+              "pos": "关键字",
+              "role": "单词",
+              "words": [
+                "default"
+              ],
+              "note": "switch 的默认分支。"
+            }
+          ],
+          "tip": "这里的 default 是 switch 里的默认分支，前面的 case 都不匹配时就走这里，不只是形容词「默认的」。"
+        },
+        "index": 10
+      },
+      {
+        "kind": "word",
+        "en": "for",
+        "cn": "for（循环）",
+        "image": "keywords.jpg",
+        "words": [
+          "for"
+        ],
+        "ipa": [
+          "/fɔr/"
+        ],
+        "pos": [
+          "关键字"
+        ],
+        "aliases": [
+          "for",
+          "循环",
+          "for循环"
+        ],
+        "analysis": {
+          "tokens": [
+            {
+              "text": "for",
+              "ipa": "/fɔr/",
+              "pos": "关键字",
+              "role": "单词",
+              "words": [
+                "for"
+              ],
+              "note": "循环关键字，不是「为了」。"
+            }
+          ],
+          "tip": "这里的 for 是循环关键字，用来重复执行一段代码，不是介词「为了」。"
+        },
+        "index": 11
+      },
+      {
+        "kind": "word",
+        "en": "while",
+        "cn": "while（循环）",
+        "image": "keywords.jpg",
+        "words": [
+          "while"
+        ],
+        "ipa": [
+          "/waɪl/"
+        ],
+        "pos": [
+          "关键字"
+        ],
+        "aliases": [
+          "while",
+          "循环",
+          "while循环"
+        ],
+        "analysis": {
+          "tokens": [
+            {
+              "text": "while",
+              "ipa": "/waɪl/",
+              "pos": "关键字",
+              "role": "单词",
+              "words": [
+                "while"
+              ],
+              "note": "循环关键字。"
+            }
+          ],
+          "tip": "这里的 while 是循环关键字，条件为真时就一直执行，不只是日常说的「当……的时候」。"
+        },
+        "index": 12
+      },
+      {
+        "kind": "word",
+        "en": "do",
+        "cn": "do（循环）",
+        "image": "keywords.jpg",
+        "words": [
+          "do"
+        ],
+        "ipa": [
+          "/duː/"
+        ],
+        "pos": [
+          "关键字"
+        ],
+        "aliases": [
+          "do",
+          "do-while",
+          "do循环"
+        ],
+        "analysis": {
+          "tokens": [
+            {
+              "text": "do",
+              "ipa": "/duː/",
+              "pos": "关键字",
+              "role": "单词",
+              "words": [
+                "do"
+              ],
+              "note": "do-while 循环里的关键字，不是「做」。"
+            }
+          ],
+          "tip": "这里的 do 常和 while 组成 do-while 循环，会先执行一次再判断条件，不是动词「做」。"
+        },
+        "index": 13
+      },
+      {
+        "kind": "word",
+        "en": "break",
+        "cn": "break（跳出循环）",
+        "image": "keywords.jpg",
+        "words": [
+          "break"
+        ],
+        "ipa": [
+          "/breɪk/"
+        ],
+        "pos": [
+          "关键字"
+        ],
+        "aliases": [
+          "break",
+          "跳出",
+          "跳出循环"
+        ],
+        "analysis": {
+          "tokens": [
+            {
+              "text": "break",
+              "ipa": "/breɪk/",
+              "pos": "关键字",
+              "role": "单词",
+              "words": [
+                "break"
+              ],
+              "note": "跳出循环，不是「休息」或「打破」。"
+            }
+          ],
+          "tip": "这里的 break 用来跳出循环或 switch，不是「休息」，也不是把东西「打破」。"
+        },
+        "index": 14
+      },
+      {
+        "kind": "word",
+        "en": "continue",
+        "cn": "continue（继续下一轮）",
+        "image": "keywords.jpg",
+        "words": [
+          "continue"
+        ],
+        "ipa": [
+          "/kənˈtɪnjuː/"
+        ],
+        "pos": [
+          "关键字"
+        ],
+        "aliases": [
+          "continue",
+          "继续下一轮",
+          "跳过本轮"
+        ],
+        "analysis": {
+          "tokens": [
+            {
+              "text": "continue",
+              "ipa": "/kənˈtɪnjuː/",
+              "pos": "关键字",
+              "role": "单词",
+              "words": [
+                "continue"
+              ],
+              "note": "跳过本轮循环，不是泛泛的「继续」。"
+            }
+          ],
+          "tip": "这里的 continue 会跳过本轮、进入下一轮循环，不是随口说的「继续」。"
+        },
+        "index": 15
+      },
+      {
+        "kind": "word",
+        "en": "try",
+        "cn": "try（尝试执行）",
+        "image": "keywords.jpg",
+        "words": [
+          "try"
+        ],
+        "ipa": [
+          "/traɪ/"
+        ],
+        "pos": [
+          "关键字"
+        ],
+        "aliases": [
+          "try",
+          "尝试执行",
+          "试"
+        ],
+        "analysis": {
+          "tokens": [
+            {
+              "text": "try",
+              "ipa": "/traɪ/",
+              "pos": "关键字",
+              "role": "单词",
+              "words": [
+                "try"
+              ],
+              "note": "尝试执行可能出错的代码。"
+            }
+          ],
+          "tip": "这里的 try 用来尝试执行可能出错的代码，后面常接 catch 或 finally，不是随口说的「试一试」。"
+        },
+        "index": 16
+      },
+      {
+        "kind": "word",
+        "en": "catch",
+        "cn": "catch（捕获异常）",
+        "image": "keywords.jpg",
+        "words": [
+          "catch"
+        ],
+        "ipa": [
+          "/kætʃ/"
+        ],
+        "pos": [
+          "关键字"
+        ],
+        "aliases": [
+          "catch",
+          "捕获异常",
+          "捕捉异常"
+        ],
+        "analysis": {
+          "tokens": [
+            {
+              "text": "catch",
+              "ipa": "/kætʃ/",
+              "pos": "关键字",
+              "role": "单词",
+              "words": [
+                "catch"
+              ],
+              "note": "捕获异常，不是「抓住」。"
+            }
+          ],
+          "tip": "这里的 catch 用来捕获 throw 出来的异常，不是把东西「抓住」。"
+        },
+        "index": 17
+      },
+      {
+        "kind": "word",
+        "en": "throw",
+        "cn": "throw（抛出异常）",
+        "image": "keywords.jpg",
+        "words": [
+          "throw"
+        ],
+        "ipa": [
+          "/θroʊ/"
+        ],
+        "pos": [
+          "关键字"
+        ],
+        "aliases": [
+          "throw",
+          "抛出异常",
+          "抛异常"
+        ],
+        "analysis": {
+          "tokens": [
+            {
+              "text": "throw",
+              "ipa": "/θroʊ/",
+              "pos": "关键字",
+              "role": "单词",
+              "words": [
+                "throw"
+              ],
+              "note": "抛出异常，不是「扔」。"
+            }
+          ],
+          "tip": "这里的 throw 用来抛出异常，程序会跳到对应的 catch。不是把东西「扔出去」。"
+        },
+        "index": 18
+      },
+      {
+        "kind": "word",
+        "en": "finally",
+        "cn": "finally（最终执行）",
+        "image": "keywords.jpg",
+        "words": [
+          "finally"
+        ],
+        "ipa": [
+          "/ˈfaɪnəli/"
+        ],
+        "pos": [
+          "关键字"
+        ],
+        "aliases": [
+          "finally",
+          "最终执行",
+          "最后"
+        ],
+        "analysis": {
+          "tokens": [
+            {
+              "text": "finally",
+              "ipa": "/ˈfaɪnəli/",
+              "pos": "关键字",
+              "role": "单词",
+              "words": [
+                "finally"
+              ],
+              "note": "try/catch 之后一定会执行的块。"
+            }
+          ],
+          "tip": "finally 里的代码在 try 和 catch 之后一定会执行，常用来做清理，不只是副词「终于」。"
+        },
+        "index": 19
+      },
+      {
+        "kind": "word",
+        "en": "raise",
+        "cn": "raise（抛出异常）",
+        "image": "keywords.jpg",
+        "words": [
+          "raise"
+        ],
+        "ipa": [
+          "/reɪz/"
+        ],
+        "pos": [
+          "关键字"
+        ],
+        "aliases": [
+          "raise",
+          "抛出异常",
+          "抛异常"
+        ],
+        "analysis": {
+          "tokens": [
+            {
+              "text": "raise",
+              "ipa": "/reɪz/",
+              "pos": "关键字",
+              "role": "单词",
+              "words": [
+                "raise"
+              ],
+              "note": "Python 里抛出异常，不是「举起」。"
+            }
+          ],
+          "tip": "raise 是 Python 里抛出异常的写法，作用接近 throw，不是「举起」或「加薪」。"
+        },
+        "index": 20
+      },
+      {
+        "kind": "word",
+        "en": "except",
+        "cn": "except（捕获异常）",
+        "image": "keywords.jpg",
+        "words": [
+          "except"
+        ],
+        "ipa": [
+          "/ɪkˈsɛpt/"
+        ],
+        "pos": [
+          "关键字"
+        ],
+        "aliases": [
+          "except",
+          "捕获异常",
+          "except异常"
+        ],
+        "analysis": {
+          "tokens": [
+            {
+              "text": "except",
+              "ipa": "/ɪkˈsɛpt/",
+              "pos": "关键字",
+              "role": "单词",
+              "words": [
+                "except"
+              ],
+              "note": "Python 里捕获异常，不是「除了」。"
+            }
+          ],
+          "tip": "except 是 Python 里捕获异常的关键字，相当于其他语言的 catch，不是介词「除了」。"
+        },
+        "index": 21
+      },
+      {
+        "kind": "word",
+        "en": "true",
+        "cn": "true（真）",
+        "image": "keywords.jpg",
+        "words": [
+          "true"
+        ],
+        "ipa": [
+          "/truː/"
+        ],
+        "pos": [
+          "关键字"
+        ],
+        "aliases": [
+          "true",
+          "True",
+          "真",
+          "真值"
+        ],
+        "analysis": {
+          "tokens": [
+            {
+              "text": "true",
+              "ipa": "/truː/",
+              "pos": "关键字",
+              "role": "单词",
+              "words": [
+                "true"
+              ],
+              "note": "布尔值「真」，Python 里写成 True。"
+            }
+          ],
+          "tip": "true 表示布尔值「真」。Python 里首字母大写，写成 True，读音一样。"
+        },
+        "index": 22
+      },
+      {
+        "kind": "word",
+        "en": "false",
+        "cn": "false（假）",
+        "image": "keywords.jpg",
+        "words": [
+          "false"
+        ],
+        "ipa": [
+          "/fɔls/"
+        ],
+        "pos": [
+          "关键字"
+        ],
+        "aliases": [
+          "false",
+          "False",
+          "假",
+          "假值"
+        ],
+        "analysis": {
+          "tokens": [
+            {
+              "text": "false",
+              "ipa": "/fɔls/",
+              "pos": "关键字",
+              "role": "单词",
+              "words": [
+                "false"
+              ],
+              "note": "布尔值「假」，Python 里写成 False。"
+            }
+          ],
+          "tip": "false 表示布尔值「假」。Python 里首字母大写，写成 False，读音一样。"
+        },
+        "index": 23
+      },
+      {
+        "kind": "word",
+        "en": "None",
+        "cn": "None（空值）",
+        "image": "keywords.jpg",
+        "words": [
+          "None"
+        ],
+        "ipa": [
+          "/nʌn/"
+        ],
+        "pos": [
+          "关键字"
+        ],
+        "aliases": [
+          "None",
+          "none",
+          "空值",
+          "没有值"
+        ],
+        "analysis": {
+          "tokens": [
+            {
+              "text": "None",
+              "ipa": "/nʌn/",
+              "pos": "关键字",
+              "role": "单词",
+              "words": [
+                "None"
+              ],
+              "note": "Python 里的空值，读作 none。"
+            }
+          ],
+          "tip": "None 是 Python 里的空值，表示「没有值」，读作 none。作用接近其他语言的 null。"
+        },
+        "index": 24
+      },
+      {
+        "kind": "word",
+        "en": "new",
+        "cn": "new（新建实例）",
+        "image": "keywords.jpg",
+        "words": [
+          "new"
+        ],
+        "ipa": [
+          "/nuː/"
+        ],
+        "pos": [
+          "关键字"
+        ],
+        "aliases": [
+          "new",
+          "新建",
+          "新建实例"
+        ],
+        "analysis": {
+          "tokens": [
+            {
+              "text": "new",
+              "ipa": "/nuː/",
+              "pos": "关键字",
+              "role": "单词",
+              "words": [
+                "new"
+              ],
+              "note": "新建对象实例，不是「新的」。"
+            }
+          ],
+          "tip": "这里的 new 用来新建一个对象实例，比如 new Date()。不是形容词「新的」。"
+        },
+        "index": 25
+      },
+      {
+        "kind": "word",
+        "en": "this",
+        "cn": "this（当前对象）",
+        "image": "keywords.jpg",
+        "words": [
+          "this"
+        ],
+        "ipa": [
+          "/ðɪs/"
+        ],
+        "pos": [
+          "关键字"
+        ],
+        "aliases": [
+          "this",
+          "当前对象",
+          "本对象"
+        ],
+        "analysis": {
+          "tokens": [
+            {
+              "text": "this",
+              "ipa": "/ðɪs/",
+              "pos": "关键字",
+              "role": "单词",
+              "words": [
+                "this"
+              ],
+              "note": "指当前对象，不是「这个」。"
+            }
+          ],
+          "tip": "这里的 this 指当前对象，代码和报错里很常见，不是日常指示词「这个」。"
+        },
+        "index": 26
+      },
+      {
+        "kind": "word",
+        "en": "super",
+        "cn": "super（父类）",
+        "image": "keywords.jpg",
+        "words": [
+          "super"
+        ],
+        "ipa": [
+          "/ˈsupər/"
+        ],
+        "pos": [
+          "关键字"
+        ],
+        "aliases": [
+          "super",
+          "父类",
+          "超类"
+        ],
+        "analysis": {
+          "tokens": [
+            {
+              "text": "super",
+              "ipa": "/ˈsupər/",
+              "pos": "关键字",
+              "role": "单词",
+              "words": [
+                "super"
+              ],
+              "note": "调用父类，不是「超级」。"
+            }
+          ],
+          "tip": "这里的 super 用来调用父类的构造函数或方法，不是「超级」。"
+        },
+        "index": 27
+      },
+      {
+        "kind": "word",
+        "en": "self",
+        "cn": "self（自身实例）",
+        "image": "keywords.jpg",
+        "words": [
+          "self"
+        ],
+        "ipa": [
+          "/sɛlf/"
+        ],
+        "pos": [
+          "名词"
+        ],
+        "aliases": [
+          "self",
+          "自身",
+          "当前实例"
+        ],
+        "analysis": {
+          "tokens": [
+            {
+              "text": "self",
+              "ipa": "/sɛlf/",
+              "pos": "名词",
+              "role": "单词",
+              "words": [
+                "self"
+              ],
+              "note": "Python 里的当前实例，不是「自己」。"
+            }
+          ],
+          "tip": "self 在 Python 里表示当前实例，通常写在方法的第一个参数位置，不是随口说的「自己」。"
+        },
+        "index": 28
+      },
+      {
+        "kind": "word",
+        "en": "extends",
+        "cn": "extends（继承）",
+        "image": "keywords.jpg",
+        "words": [
+          "extends"
+        ],
+        "ipa": [
+          "/ɪkˈstɛndz/"
+        ],
+        "pos": [
+          "关键字"
+        ],
+        "aliases": [
+          "extends",
+          "继承"
+        ],
+        "analysis": {
+          "tokens": [
+            {
+              "text": "extends",
+              "ipa": "/ɪkˈstɛndz/",
+              "pos": "关键字",
+              "role": "单词",
+              "words": [
+                "extends"
+              ],
+              "note": "表示继承。"
+            }
+          ],
+          "tip": "extends 表示这个类继承另一个类，比如 class Dog extends Animal。"
+        },
+        "index": 29
+      },
+      {
+        "kind": "word",
+        "en": "implements",
+        "cn": "implements（实现接口）",
+        "image": "keywords.jpg",
+        "words": [
+          "implements"
+        ],
+        "ipa": [
+          "/ˈɪmpləmənts/"
+        ],
+        "pos": [
+          "关键字"
+        ],
+        "aliases": [
+          "implements",
+          "实现接口",
+          "实现"
+        ],
+        "analysis": {
+          "tokens": [
+            {
+              "text": "implements",
+              "ipa": "/ˈɪmpləmənts/",
+              "pos": "关键字",
+              "role": "单词",
+              "words": [
+                "implements"
+              ],
+              "note": "表示实现接口。"
+            }
+          ],
+          "tip": "implements 表示这个类实现某个接口，在 Java 和 TypeScript 里很常见。"
+        },
+        "index": 30
+      },
+      {
+        "kind": "word",
+        "en": "static",
+        "cn": "static（静态）",
+        "image": "keywords.jpg",
+        "words": [
+          "static"
+        ],
+        "ipa": [
+          "/ˈstætɪk/"
+        ],
+        "pos": [
+          "关键字"
+        ],
+        "aliases": [
+          "static",
+          "静态"
+        ],
+        "analysis": {
+          "tokens": [
+            {
+              "text": "static",
+              "ipa": "/ˈstætɪk/",
+              "pos": "关键字",
+              "role": "单词",
+              "words": [
+                "static"
+              ],
+              "note": "属于类本身的成员，不是「静电」。"
+            }
+          ],
+          "tip": "这里的 static 表示属于类本身，而不属于某个实例，不是「静电」，也不只是泛泛的「静态」。"
+        },
+        "index": 31
+      },
+      {
+        "kind": "word",
+        "en": "public",
+        "cn": "public（公有）",
+        "image": "keywords.jpg",
+        "words": [
+          "public"
+        ],
+        "ipa": [
+          "/ˈpʌblɪk/"
+        ],
+        "pos": [
+          "关键字"
+        ],
+        "aliases": [
+          "public",
+          "公有",
+          "公开"
+        ],
+        "analysis": {
+          "tokens": [
+            {
+              "text": "public",
+              "ipa": "/ˈpʌblɪk/",
+              "pos": "关键字",
+              "role": "单词",
+              "words": [
+                "public"
+              ],
+              "note": "公有访问权限，不是「公共的」。"
+            }
+          ],
+          "tip": "这里的 public 表示公有，类外面也可以访问，不是日常说的「公共的」。"
+        },
+        "index": 32
+      },
+      {
+        "kind": "word",
+        "en": "private",
+        "cn": "private（私有）",
+        "image": "keywords.jpg",
+        "words": [
+          "private"
+        ],
+        "ipa": [
+          "/ˈpraɪvɪt/"
+        ],
+        "pos": [
+          "关键字"
+        ],
+        "aliases": [
+          "private",
+          "私有"
+        ],
+        "analysis": {
+          "tokens": [
+            {
+              "text": "private",
+              "ipa": "/ˈpraɪvɪt/",
+              "pos": "关键字",
+              "role": "单词",
+              "words": [
+                "private"
+              ],
+              "note": "私有访问权限，不是「私人的」。"
+            }
+          ],
+          "tip": "这里的 private 表示私有，只在类内部能访问，不是日常说的「私人的」。"
+        },
+        "index": 33
+      },
+      {
+        "kind": "word",
+        "en": "protected",
+        "cn": "protected（受保护）",
+        "image": "keywords.jpg",
+        "words": [
+          "protected"
+        ],
+        "ipa": [
+          "/prəˈtɛktɪd/"
+        ],
+        "pos": [
+          "关键字"
+        ],
+        "aliases": [
+          "protected",
+          "受保护",
+          "保护"
+        ],
+        "analysis": {
+          "tokens": [
+            {
+              "text": "protected",
+              "ipa": "/prəˈtɛktɪd/",
+              "pos": "关键字",
+              "role": "单词",
+              "words": [
+                "protected"
+              ],
+              "note": "受保护的访问权限。"
+            }
+          ],
+          "tip": "protected 表示受保护，本类和子类可以访问，外部一般不能直接访问。"
+        },
+        "index": 34
+      },
+      {
+        "kind": "word",
+        "en": "abstract",
+        "cn": "abstract（抽象）",
+        "image": "keywords.jpg",
+        "words": [
+          "abstract"
+        ],
+        "ipa": [
+          "/ˈæbstrækt/"
+        ],
+        "pos": [
+          "关键字"
+        ],
+        "aliases": [
+          "abstract",
+          "抽象"
+        ],
+        "analysis": {
+          "tokens": [
+            {
+              "text": "abstract",
+              "ipa": "/ˈæbstrækt/",
+              "pos": "关键字",
+              "role": "单词",
+              "words": [
+                "abstract"
+              ],
+              "note": "抽象类或抽象方法。"
+            }
+          ],
+          "tip": "这里的 abstract 表示抽象类或抽象方法，本身不能直接实例化，需要由子类实现。"
+        },
+        "index": 35
+      },
+      {
+        "kind": "word",
+        "en": "override",
+        "cn": "override（重写）",
+        "image": "keywords.jpg",
+        "words": [
+          "override"
+        ],
+        "ipa": [
+          "/ˌoʊvərˈraɪd/"
+        ],
+        "pos": [
+          "关键字"
+        ],
+        "aliases": [
+          "override",
+          "重写",
+          "覆写"
+        ],
+        "analysis": {
+          "tokens": [
+            {
+              "text": "override",
+              "ipa": "/ˌoʊvərˈraɪd/",
+              "pos": "关键字",
+              "role": "单词",
+              "words": [
+                "override"
+              ],
+              "note": "重写父类方法。"
+            }
+          ],
+          "tip": "override 表示重写父类的方法，用来替换或补充父类里的实现。"
+        },
+        "index": 36
+      },
+      {
+        "kind": "word",
+        "en": "constructor",
+        "cn": "constructor（构造函数）",
+        "image": "keywords.jpg",
+        "words": [
+          "constructor"
+        ],
+        "ipa": [
+          "/kənˈstrʌktər/"
+        ],
+        "pos": [
+          "名词"
+        ],
+        "aliases": [
+          "constructor",
+          "构造函数",
+          "构造器"
+        ],
+        "analysis": {
+          "tokens": [
+            {
+              "text": "constructor",
+              "ipa": "/kənˈstrʌktər/",
+              "pos": "名词",
+              "role": "单词",
+              "words": [
+                "constructor"
+              ],
+              "note": "创建对象时执行的构造函数。"
+            }
+          ],
+          "tip": "constructor 就是构造函数，创建对象时会先执行它，常和 new 一起出现。"
+        },
+        "index": 37
+      },
+      {
+        "kind": "word",
+        "en": "method",
+        "cn": "method（方法）",
+        "image": "keywords.jpg",
+        "words": [
+          "method"
+        ],
+        "ipa": [
+          "/ˈmɛθəd/"
+        ],
+        "pos": [
+          "名词"
+        ],
+        "aliases": [
+          "method",
+          "方法"
+        ],
+        "analysis": {
+          "tokens": [
+            {
+              "text": "method",
+              "ipa": "/ˈmɛθəd/",
+              "pos": "名词",
+              "role": "单词",
+              "words": [
+                "method"
+              ],
+              "note": "对象上的方法，不是泛泛的「办法」。"
+            }
+          ],
+          "tip": "这里的 method 是对象上的方法，也就是类里的函数，不是泛泛的「办法」。"
+        },
+        "index": 38
+      },
+      {
+        "kind": "word",
+        "en": "property",
+        "cn": "property（属性）",
+        "image": "keywords.jpg",
+        "words": [
+          "property"
+        ],
+        "ipa": [
+          "/ˈprɑpərti/"
+        ],
+        "pos": [
+          "名词"
+        ],
+        "aliases": [
+          "property",
+          "属性"
+        ],
+        "analysis": {
+          "tokens": [
+            {
+              "text": "property",
+              "ipa": "/ˈprɑpərti/",
+              "pos": "名词",
+              "role": "单词",
+              "words": [
+                "property"
+              ],
+              "note": "对象的属性，不是「财产」。"
+            }
+          ],
+          "tip": "这里的 property 指对象的属性，代码里常用点号访问，不是「财产」。"
+        },
+        "index": 39
+      },
+      {
+        "kind": "word",
+        "en": "def",
+        "cn": "def（定义函数）",
+        "image": "keywords.jpg",
+        "words": [
+          "def"
+        ],
+        "ipa": [
+          "/dɛf/"
+        ],
+        "pos": [
+          "关键字"
+        ],
+        "aliases": [
+          "def",
+          "定义函数",
+          "定义"
+        ],
+        "analysis": {
+          "tokens": [
+            {
+              "text": "def",
+              "ipa": "/dɛf/",
+              "pos": "关键字",
+              "role": "单词",
+              "words": [
+                "def"
+              ],
+              "note": "Python 里定义函数的关键字。"
+            }
+          ],
+          "tip": "def 是 Python 里用来定义函数的关键字，读作 /dɛf/，后面跟函数名。"
+        },
+        "index": 40
+      },
+      {
+        "kind": "word",
+        "en": "func",
+        "cn": "func（定义函数）",
+        "image": "keywords.jpg",
+        "words": [
+          "func"
+        ],
+        "ipa": [
+          "/fʌŋk/"
+        ],
+        "pos": [
+          "关键字"
+        ],
+        "aliases": [
+          "func",
+          "定义函数",
+          "函数"
+        ],
+        "analysis": {
+          "tokens": [
+            {
+              "text": "func",
+              "ipa": "/fʌŋk/",
+              "pos": "关键字",
+              "role": "单词",
+              "words": [
+                "func"
+              ],
+              "note": "Go 等语言里定义函数的关键字。"
+            }
+          ],
+          "tip": "func 是 Go 等语言里用来定义函数的关键字，读作 /fʌŋk/。"
+        },
+        "index": 41
+      },
+      {
+        "kind": "word",
+        "en": "struct",
+        "cn": "struct（结构体）",
+        "image": "keywords.jpg",
+        "words": [
+          "struct"
+        ],
+        "ipa": [
+          "/strʌkt/"
+        ],
+        "pos": [
+          "关键字"
+        ],
+        "aliases": [
+          "struct",
+          "结构体",
+          "结构"
+        ],
+        "analysis": {
+          "tokens": [
+            {
+              "text": "struct",
+              "ipa": "/strʌkt/",
+              "pos": "关键字",
+              "role": "单词",
+              "words": [
+                "struct"
+              ],
+              "note": "结构体。"
+            }
+          ],
+          "tip": "struct 表示结构体，用来把一组字段组合在一起，在 Go、C 和 Rust 里很常见。"
+        },
+        "index": 42
+      },
+      {
+        "kind": "word",
+        "en": "lambda",
+        "cn": "lambda（匿名函数）",
+        "image": "keywords.jpg",
+        "words": [
+          "lambda"
+        ],
+        "ipa": [
+          "/ˈlæmdə/"
+        ],
+        "pos": [
+          "关键字"
+        ],
+        "aliases": [
+          "lambda",
+          "匿名函数",
+          "拉姆达"
+        ],
+        "analysis": {
+          "tokens": [
+            {
+              "text": "lambda",
+              "ipa": "/ˈlæmdə/",
+              "pos": "关键字",
+              "role": "单词",
+              "words": [
+                "lambda"
+              ],
+              "note": "匿名函数。"
+            }
+          ],
+          "tip": "lambda 表示匿名函数，也就是没有名字的短函数，Python 和不少语言里都能见到。"
+        },
+        "index": 43
+      },
+      {
+        "kind": "word",
+        "en": "pass",
+        "cn": "pass（空操作）",
+        "image": "keywords.jpg",
+        "words": [
+          "pass"
+        ],
+        "ipa": [
+          "/pæs/"
+        ],
+        "pos": [
+          "关键字"
+        ],
+        "aliases": [
+          "pass",
+          "空操作",
+          "占位"
+        ],
+        "analysis": {
+          "tokens": [
+            {
+              "text": "pass",
+              "ipa": "/pæs/",
+              "pos": "关键字",
+              "role": "单词",
+              "words": [
+                "pass"
+              ],
+              "note": "Python 的空操作，不是「传递」。"
+            }
+          ],
+          "tip": "这里的 pass 是 Python 里的空操作，只占个位置、什么也不做，不是「传递」或「路过」。"
+        },
+        "index": 44
+      },
+      {
+        "kind": "word",
+        "en": "typeof",
+        "cn": "typeof（类型检查）",
+        "image": "keywords.jpg",
+        "words": [
+          "typeof"
+        ],
+        "ipa": [
+          "/ˈtaɪp ʌv/"
+        ],
+        "pos": [
+          "关键字"
+        ],
+        "aliases": [
+          "typeof",
+          "type of",
+          "类型检查"
+        ],
+        "analysis": {
+          "tokens": [
+            {
+              "text": "typeof",
+              "ipa": "/ˈtaɪp ʌv/",
+              "pos": "关键字",
+              "role": "单词",
+              "words": [
+                "typeof"
+              ],
+              "note": "查看值的类型，读作 type of。"
+            }
+          ],
+          "tip": "typeof 用来查看一个值的类型，读作 type of，比如 typeof x。"
+        },
+        "index": 45
+      },
+      {
+        "kind": "word",
+        "en": "instanceof",
+        "cn": "instanceof（实例判断）",
+        "image": "keywords.jpg",
+        "words": [
+          "instanceof"
+        ],
+        "ipa": [
+          "/ˈɪnstəns ʌv/"
+        ],
+        "pos": [
+          "关键字"
+        ],
+        "aliases": [
+          "instanceof",
+          "instance of",
+          "实例判断"
+        ],
+        "analysis": {
+          "tokens": [
+            {
+              "text": "instanceof",
+              "ipa": "/ˈɪnstəns ʌv/",
+              "pos": "关键字",
+              "role": "单词",
+              "words": [
+                "instanceof"
+              ],
+              "note": "判断是不是某个类的实例，读作 instance of。"
+            }
+          ],
+          "tip": "instanceof 用来判断对象是不是某个类的实例，读作 instance of。"
+        },
+        "index": 46
+      },
+      {
+        "kind": "word",
+        "en": "enum",
+        "cn": "enum（枚举）",
+        "image": "keywords.jpg",
+        "words": [
+          "enum"
+        ],
+        "ipa": [
+          "/ˈinʌm/"
+        ],
+        "pos": [
+          "关键字"
+        ],
+        "aliases": [
+          "enum",
+          "枚举"
+        ],
+        "analysis": {
+          "tokens": [
+            {
+              "text": "enum",
+              "ipa": "/ˈinʌm/",
+              "pos": "关键字",
+              "role": "单词",
+              "words": [
+                "enum"
+              ],
+              "note": "枚举，常读作 ee-num。"
+            }
+          ],
+          "tip": "enum 表示枚举，用来列出一组固定的取值，常读作 ee-num。"
+        },
+        "index": 47
+      },
+      {
+        "kind": "word",
+        "en": "any",
+        "cn": "any（任意类型）",
+        "image": "keywords.jpg",
+        "words": [
+          "any"
+        ],
+        "ipa": [
+          "/ˈɛni/"
+        ],
+        "pos": [
+          "名词"
+        ],
+        "aliases": [
+          "any",
+          "任意类型",
+          "任意"
+        ],
+        "analysis": {
+          "tokens": [
+            {
+              "text": "any",
+              "ipa": "/ˈɛni/",
+              "pos": "名词",
+              "role": "单词",
+              "words": [
+                "any"
+              ],
+              "note": "TypeScript 里的任意类型。"
+            }
+          ],
+          "tip": "在 TypeScript 里，any 表示任意类型，用了它就几乎不再做类型检查，要小心使用。"
+        },
+        "index": 48
+      },
+      {
+        "kind": "word",
+        "en": "never",
+        "cn": "never（永不类型）",
+        "image": "keywords.jpg",
+        "words": [
+          "never"
+        ],
+        "ipa": [
+          "/ˈnɛvər/"
+        ],
+        "pos": [
+          "名词"
+        ],
+        "aliases": [
+          "never",
+          "永不类型",
+          "never类型"
+        ],
+        "analysis": {
+          "tokens": [
+            {
+              "text": "never",
+              "ipa": "/ˈnɛvər/",
+              "pos": "名词",
+              "role": "单词",
+              "words": [
+                "never"
+              ],
+              "note": "TypeScript 里表示永不出现的类型。"
+            }
+          ],
+          "tip": "在 TypeScript 里，never 表示永远不会出现的类型，比如一定会抛错、不会正常返回的函数。"
+        },
+        "index": 49
+      },
+      {
+        "kind": "word",
+        "en": "unknown",
+        "cn": "unknown（未知类型）",
+        "image": "keywords.jpg",
+        "words": [
+          "unknown"
+        ],
+        "ipa": [
+          "/ʌnˈnoʊn/"
+        ],
+        "pos": [
+          "名词"
+        ],
+        "aliases": [
+          "unknown",
+          "未知类型",
+          "未知"
+        ],
+        "analysis": {
+          "tokens": [
+            {
+              "text": "unknown",
+              "ipa": "/ʌnˈnoʊn/",
+              "pos": "名词",
+              "role": "单词",
+              "words": [
+                "unknown"
+              ],
+              "note": "TypeScript 里尚未确定的类型。"
+            }
+          ],
+          "tip": "在 TypeScript 里，unknown 表示还不确定的类型，使用前通常要先收窄类型，比 any 更安全。"
+        },
+        "index": 50
+      },
+      {
+        "kind": "word",
+        "en": "readonly",
+        "cn": "readonly（只读）",
+        "image": "keywords.jpg",
+        "words": [
+          "readonly"
+        ],
+        "ipa": [
+          "/ˈridˌoʊnli/"
+        ],
+        "pos": [
+          "关键字"
+        ],
+        "aliases": [
+          "readonly",
+          "只读",
+          "read only"
+        ],
+        "analysis": {
+          "tokens": [
+            {
+              "text": "readonly",
+              "ipa": "/ˈridˌoʊnli/",
+              "pos": "关键字",
+              "role": "单词",
+              "words": [
+                "readonly"
+              ],
+              "note": "只读修饰符。"
+            }
+          ],
+          "tip": "readonly 表示只读，这个属性或数组被赋值后就不能再改。"
+        },
+        "index": 51
+      },
+      {
+        "kind": "word",
+        "en": "delete",
+        "cn": "delete（删除属性）",
+        "image": "keywords.jpg",
+        "words": [
+          "delete"
+        ],
+        "ipa": [
+          "/dɪˈliːt/"
+        ],
+        "pos": [
+          "关键字"
+        ],
+        "aliases": [
+          "delete",
+          "删除属性",
+          "删除"
+        ],
+        "analysis": {
+          "tokens": [
+            {
+              "text": "delete",
+              "ipa": "/dɪˈliːt/",
+              "pos": "关键字",
+              "role": "单词",
+              "words": [
+                "delete"
+              ],
+              "note": "删除对象属性的关键字。"
+            }
+          ],
+          "tip": "这里的 delete 用来删除对象的属性，比如 delete user.name，不只是普通的「删除」。"
+        },
+        "index": 52
+      },
+      {
+        "kind": "word",
+        "en": "yield",
+        "cn": "yield（产出值）",
+        "image": "keywords.jpg",
+        "words": [
+          "yield"
+        ],
+        "ipa": [
+          "/jiːld/"
+        ],
+        "pos": [
+          "关键字"
+        ],
+        "aliases": [
+          "yield",
+          "产出值",
+          "让出"
+        ],
+        "analysis": {
+          "tokens": [
+            {
+              "text": "yield",
+              "ipa": "/jiːld/",
+              "pos": "关键字",
+              "role": "单词",
+              "words": [
+                "yield"
+              ],
+              "note": "生成器里产出值，不是「让步」。"
+            }
+          ],
+          "tip": "这里的 yield 用在生成器函数里，用来产出一个值并暂时停住，不是「让步」或「产量」。"
+        },
+        "index": 53
+      },
+      {
+        "kind": "word",
+        "en": "encapsulation",
+        "cn": "encapsulation（封装）",
+        "image": "keywords.jpg",
+        "words": [
+          "encapsulation"
+        ],
+        "ipa": [
+          "/ɪnˌkæpsəˈleɪʃən/"
+        ],
+        "pos": [
+          "名词"
+        ],
+        "aliases": [
+          "encapsulation",
+          "封装"
+        ],
+        "analysis": {
+          "tokens": [
+            {
+              "text": "encapsulation",
+              "ipa": "/ɪnˌkæpsəˈleɪʃən/",
+              "pos": "名词",
+              "role": "单词",
+              "words": [
+                "encapsulation"
+              ],
+              "note": "面向对象里的封装。"
+            }
+          ],
+          "tip": "encapsulation 就是封装，面向对象里把数据和操作细节藏在对象内部，只对外提供必要的接口。第 22 课里的 interface 和 class 常和它一起出现。"
+        },
+        "index": 54
+      },
+      {
+        "kind": "word",
+        "en": "inheritance",
+        "cn": "inheritance（继承）",
+        "image": "keywords.jpg",
+        "words": [
+          "inheritance"
+        ],
+        "ipa": [
+          "/ɪnˈhɛrɪtəns/"
+        ],
+        "pos": [
+          "名词"
+        ],
+        "aliases": [
+          "inheritance",
+          "继承"
+        ],
+        "analysis": {
+          "tokens": [
+            {
+              "text": "inheritance",
+              "ipa": "/ɪnˈhɛrɪtəns/",
+              "pos": "名词",
+              "role": "单词",
+              "words": [
+                "inheritance"
+              ],
+              "note": "面向对象里的继承概念，extends 是对应的关键字。"
+            }
+          ],
+          "tip": "inheritance 是面向对象里的继承，指子类复用并扩展父类的能力。extends 是实现继承的关键字，两个都要认识：inheritance 是概念，extends 是关键字。"
+        },
+        "index": 55
+      },
+      {
+        "kind": "word",
+        "en": "abstract class",
+        "cn": "abstract class（抽象类）",
+        "image": "keywords.jpg",
+        "words": [
+          "abstract",
+          "class"
+        ],
+        "ipa": [
+          "/ˈæbstrækt/",
+          "/klæs/"
+        ],
+        "pos": [
+          "形容词",
+          "名词"
+        ],
+        "aliases": [
+          "abstract class",
+          "抽象类",
+          "abstractclass"
+        ],
+        "analysis": {
+          "tokens": [
+            {
+              "text": "abstract class",
+              "ipa": "/ˈæbstrækt/ /klæs/",
+              "pos": "词组",
+              "role": "单词",
+              "words": [
+                "abstract",
+                "class"
+              ],
+              "note": "抽象类，本身不能直接 new。"
+            }
+          ],
+          "tip": "abstract class 就是抽象类，本身不能直接实例化，需要由子类去实现抽象方法。前面的 abstract 是关键字，这里是完整说法。class 作为单词已在第 22 课「代码与报错」里。"
+        },
+        "index": 56
+      },
+      {
+        "kind": "word",
+        "en": "generic",
+        "cn": "generic（泛型）",
+        "image": "keywords.jpg",
+        "words": [
+          "generic"
+        ],
+        "ipa": [
+          "/dʒəˈnɛrɪk/"
+        ],
+        "pos": [
+          "名词"
+        ],
+        "aliases": [
+          "generic",
+          "generics",
+          "泛型"
+        ],
+        "analysis": {
+          "tokens": [
+            {
+              "text": "generic",
+              "ipa": "/dʒəˈnɛrɪk/",
+              "pos": "名词",
+              "role": "单词",
+              "words": [
+                "generic"
+              ],
+              "note": "泛型，也常说 generics。"
+            }
+          ],
+          "tip": "generic 就是泛型，也常写成 generics。用来写能适配多种类型的代码，比如 List<T>。"
+        },
+        "index": 57
+      },
+      {
+        "kind": "word",
+        "en": "composition",
+        "cn": "composition（组合）",
+        "image": "keywords.jpg",
+        "words": [
+          "composition"
+        ],
+        "ipa": [
+          "/ˌkɑmpəˈzɪʃən/"
+        ],
+        "pos": [
+          "名词"
+        ],
+        "aliases": [
+          "composition",
+          "组合",
+          "用组合代替继承"
+        ],
+        "analysis": {
+          "tokens": [
+            {
+              "text": "composition",
+              "ipa": "/ˌkɑmpəˈzɪʃən/",
+              "pos": "名词",
+              "role": "单词",
+              "words": [
+                "composition"
+              ],
+              "note": "面向对象里的组合，不是泛泛的「组合」。"
+            }
+          ],
+          "tip": "这里的 composition 是面向对象里的组合，指一个对象里包含其他对象，常说「用组合代替继承」。不是日常把东西「组合」在一起的泛泛说法。"
+        },
+        "index": 58
+      },
+      {
+        "kind": "word",
+        "en": "command configuration",
+        "cn": "command configuration（命令配置）",
+        "image": "keywords.jpg",
+        "words": [
+          "command",
+          "configuration"
+        ],
+        "ipa": [
+          "/kəˈmænd/",
+          "/kənˌfɪɡjəˈreɪʃən/"
+        ],
+        "pos": [
+          "名词",
+          "名词"
+        ],
+        "aliases": [
+          "command configuration",
+          "command config",
+          "命令配置"
+        ],
+        "analysis": {
+          "tokens": [
+            {
+              "text": "command configuration",
+              "ipa": "/kəˈmænd/ /kənˌfɪɡjəˈreɪʃən/",
+              "pos": "词组",
+              "role": "单词",
+              "words": [
+                "command",
+                "configuration"
+              ],
+              "note": "项目里配置要执行的命令或运行参数。"
+            }
+          ],
+          "tip": "command configuration 就是命令配置，指项目里配置要执行的命令或运行参数，比如启动脚本、运行配置。command 和 config 作为单词已在第 21 课「技术栈」里。"
+        },
+        "index": 59
+      },
+      {
+        "kind": "word",
+        "en": "entry point",
+        "cn": "entry point（运行入口）",
+        "image": "keywords.jpg",
+        "words": [
+          "entry",
+          "point"
+        ],
+        "ipa": [
+          "/ˈɛntri/",
+          "/pɔɪnt/"
+        ],
+        "pos": [
+          "名词",
+          "名词"
+        ],
+        "aliases": [
+          "entry point",
+          "main",
+          "main function",
+          "入口",
+          "运行入口"
+        ],
+        "analysis": {
+          "tokens": [
+            {
+              "text": "entry point",
+              "ipa": "/ˈɛntri/ /pɔɪnt/",
+              "pos": "词组",
+              "role": "单词",
+              "words": [
+                "entry",
+                "point"
+              ],
+              "note": "程序全部运行的入口。"
+            }
+          ],
+          "tip": "entry point 就是程序全部运行的入口，比如 Java 或 Go 的 main，或 Python 的 if __name__ == \"__main__\"。"
+        },
+        "index": 60
+      },
+      {
+        "kind": "word",
+        "en": "main",
+        "cn": "main（入口函数）",
+        "image": "keywords.jpg",
+        "words": [
+          "main"
+        ],
+        "ipa": [
+          "/meɪn/"
+        ],
+        "pos": [
+          "名词"
+        ],
+        "aliases": [
+          "main",
+          "入口",
+          "运行入口",
+          "main function",
+          "__main__"
+        ],
+        "analysis": {
+          "tokens": [
+            {
+              "text": "main",
+              "ipa": "/meɪn/",
+              "pos": "名词",
+              "role": "单词",
+              "words": [
+                "main"
+              ],
+              "note": "程序的入口函数。"
+            }
+          ],
+          "tip": "main 是程序全部运行的入口函数，比如 Java、Go、C 里的 main，或 Python 的 if __name__ == \"__main__\"。"
+        },
+        "index": 61
+      },
+      {
+        "kind": "sentence",
+        "en": "Declare the variable with let.",
+        "cn": "用 let 声明这个变量。",
+        "image": "keywords.jpg",
+        "words": [
+          "Declare",
+          "the",
+          "variable",
+          "with",
+          "let"
+        ],
+        "ipa": [
+          "/dɪˈklɛr/",
+          "/ðə/",
+          "/ˈvɛriəbəl/",
+          "/wɪð/",
+          "/lɛt/"
+        ],
+        "pos": [
+          "动词",
+          "冠词",
+          "名词",
+          "介词",
+          "关键字"
+        ],
+        "aliases": [
+          "用let声明这个变量",
+          "用 let 声明这个变量",
+          "用let声明变量"
+        ],
+        "analysis": {
+          "tokens": [
+            {
+              "text": "Declare",
+              "ipa": "/dɪˈklɛr/",
+              "pos": "动词",
+              "words": [
+                "Declare"
+              ],
+              "role": "谓语"
+            },
+            {
+              "text": "the variable",
+              "ipa": "/ðə ˈvɛriəbəl/",
+              "pos": "词组",
+              "words": [
+                "the",
+                "variable"
+              ],
+              "role": "宾语"
+            },
+            {
+              "text": "with let",
+              "ipa": "/wɪð lɛt/",
+              "pos": "词组",
+              "words": [
+                "with",
+                "let"
+              ],
+              "role": "状语",
+              "note": "这里的 let 是声明变量的关键字，不是「让」。"
+            }
+          ],
+          "tip": "在 JavaScript 里声明变量，常会写 let。注意这里的 let 不是日常英语的「让」。"
+        },
+        "index": 62
+      },
+      {
+        "kind": "sentence",
+        "en": "This function returns void.",
+        "cn": "这个函数的返回值是 void。",
+        "image": "keywords.jpg",
+        "words": [
+          "This",
+          "function",
+          "returns",
+          "void"
+        ],
+        "ipa": [
+          "/ðɪs/",
+          "/ˈfʌŋkʃən/",
+          "/rɪˈtɜrnz/",
+          "/vɔɪd/"
+        ],
+        "pos": [
+          "代词",
+          "名词",
+          "动词",
+          "关键字"
+        ],
+        "aliases": [
+          "这个函数的返回值是void",
+          "这个函数返回 void",
+          "这个函数没有返回值"
+        ],
+        "analysis": {
+          "tokens": [
+            {
+              "text": "This function",
+              "ipa": "/ðɪs ˈfʌŋkʃən/",
+              "pos": "词组",
+              "words": [
+                "This",
+                "function"
+              ],
+              "role": "主语"
+            },
+            {
+              "text": "returns",
+              "ipa": "/rɪˈtɜrnz/",
+              "pos": "动词",
+              "words": [
+                "returns"
+              ],
+              "role": "谓语"
+            },
+            {
+              "text": "void",
+              "ipa": "/vɔɪd/",
+              "pos": "关键字",
+              "words": [
+                "void"
+              ],
+              "role": "宾语",
+              "note": "表示没有返回值。"
+            }
+          ],
+          "tip": "看到 returns void，说明这个函数不返回有用的值。"
+        },
+        "index": 63
+      },
+      {
+        "kind": "sentence",
+        "en": "If the value is null, then throw.",
+        "cn": "如果这个值是 null，就抛出异常。",
+        "image": "keywords.jpg",
+        "words": [
+          "If",
+          "the",
+          "value",
+          "is",
+          "null",
+          "then",
+          "throw"
+        ],
+        "ipa": [
+          "/ɪf/",
+          "/ðə/",
+          "/ˈvælju/",
+          "/ɪz/",
+          "/nʌl/",
+          "/ðɛn/",
+          "/θroʊ/"
+        ],
+        "pos": [
+          "关键字",
+          "冠词",
+          "名词",
+          "系动词",
+          "名词",
+          "副词",
+          "关键字"
+        ],
+        "aliases": [
+          "如果这个值是null就抛出异常",
+          "如果值是 null 就 throw",
+          "如果是空值就抛异常"
+        ],
+        "analysis": {
+          "tokens": [
+            {
+              "text": "If",
+              "ipa": "/ɪf/",
+              "pos": "关键字",
+              "words": [
+                "If"
+              ],
+              "role": "状语",
+              "note": "条件分支。"
+            },
+            {
+              "text": "the value",
+              "ipa": "/ðə ˈvælju/",
+              "pos": "词组",
+              "words": [
+                "the",
+                "value"
+              ],
+              "role": "主语"
+            },
+            {
+              "text": "is",
+              "ipa": "/ɪz/",
+              "pos": "系动词",
+              "words": [
+                "is"
+              ],
+              "role": "谓语"
+            },
+            {
+              "text": "null",
+              "ipa": "/nʌl/",
+              "pos": "名词",
+              "words": [
+                "null"
+              ],
+              "role": "表语"
+            },
+            {
+              "text": "then throw",
+              "ipa": "/ðɛn θroʊ/",
+              "pos": "词组",
+              "words": [
+                "then",
+                "throw"
+              ],
+              "role": "谓语",
+              "note": "这里的 throw 是抛出异常，不是「扔」。"
+            }
+          ],
+          "tip": "代码和文档里常见这种逻辑：如果值是 null，就 throw 一个异常。"
+        },
+        "index": 64
+      },
+      {
+        "kind": "sentence",
+        "en": "This is a public method.",
+        "cn": "这是一个公有方法。",
+        "image": "keywords.jpg",
+        "words": [
+          "This",
+          "is",
+          "a",
+          "public",
+          "method"
+        ],
+        "ipa": [
+          "/ðɪs/",
+          "/ɪz/",
+          "/ə/",
+          "/ˈpʌblɪk/",
+          "/ˈmɛθəd/"
+        ],
+        "pos": [
+          "代词",
+          "系动词",
+          "冠词",
+          "关键字",
+          "名词"
+        ],
+        "aliases": [
+          "这是一个公有方法",
+          "这是一个 public 方法",
+          "这是公有方法"
+        ],
+        "analysis": {
+          "tokens": [
+            {
+              "text": "This",
+              "ipa": "/ðɪs/",
+              "pos": "代词",
+              "words": [
+                "This"
+              ],
+              "role": "主语"
+            },
+            {
+              "text": "is",
+              "ipa": "/ɪz/",
+              "pos": "系动词",
+              "words": [
+                "is"
+              ],
+              "role": "谓语"
+            },
+            {
+              "text": "a public method",
+              "ipa": "/ə ˈpʌblɪk ˈmɛθəd/",
+              "pos": "词组",
+              "words": [
+                "a",
+                "public",
+                "method"
+              ],
+              "role": "表语",
+              "note": "public 表示类外面也可以调用。"
+            }
+          ],
+          "tip": "看到 public method，说明这是一个公有方法，类外面也可以调用。"
+        },
+        "index": 65
+      },
+      {
+        "kind": "sentence",
+        "en": "Catch the exception.",
+        "cn": "捕获这个异常。",
+        "image": "keywords.jpg",
+        "words": [
+          "Catch",
+          "the",
+          "exception"
+        ],
+        "ipa": [
+          "/kætʃ/",
+          "/ðə/",
+          "/ɪkˈsɛpʃən/"
+        ],
+        "pos": [
+          "关键字",
+          "冠词",
+          "名词"
+        ],
+        "aliases": [
+          "捕获这个异常",
+          "捕捉这个异常",
+          "catch 这个异常"
+        ],
+        "analysis": {
+          "tokens": [
+            {
+              "text": "Catch",
+              "ipa": "/kætʃ/",
+              "pos": "关键字",
+              "words": [
+                "Catch"
+              ],
+              "role": "谓语",
+              "note": "捕获异常，不是「抓住」。"
+            },
+            {
+              "text": "the exception",
+              "ipa": "/ðə ɪkˈsɛpʃən/",
+              "pos": "词组",
+              "words": [
+                "the",
+                "exception"
+              ],
+              "role": "宾语"
+            }
+          ],
+          "tip": "异常出现后要用 catch 接住它，可以说 Catch the exception。"
+        },
+        "index": 66
+      },
+      {
+        "kind": "sentence",
+        "en": "Use var to declare a variable.",
+        "cn": "用 var 声明一个变量。",
+        "image": "keywords.jpg",
+        "words": [
+          "Use",
+          "var",
+          "to",
+          "declare",
+          "a",
+          "variable"
+        ],
+        "ipa": [
+          "/juz/",
+          "/vɑr/",
+          "/tuː/",
+          "/dɪˈklɛr/",
+          "/ə/",
+          "/ˈvɛriəbəl/"
+        ],
+        "pos": [
+          "动词",
+          "关键字",
+          "介词",
+          "动词",
+          "冠词",
+          "名词"
+        ],
+        "aliases": [
+          "用var声明一个变量",
+          "用 var 声明一个变量",
+          "用var声明变量"
+        ],
+        "analysis": {
+          "tokens": [
+            {
+              "text": "Use",
+              "ipa": "/juz/",
+              "pos": "动词",
+              "words": [
+                "Use"
+              ],
+              "role": "谓语"
+            },
+            {
+              "text": "var",
+              "ipa": "/vɑr/",
+              "pos": "关键字",
+              "words": [
+                "var"
+              ],
+              "role": "宾语",
+              "note": "声明变量的旧写法。"
+            },
+            {
+              "text": "to declare",
+              "ipa": "/tuː dɪˈklɛr/",
+              "pos": "词组",
+              "words": [
+                "to",
+                "declare"
+              ],
+              "role": "状语"
+            },
+            {
+              "text": "a variable",
+              "ipa": "/ə ˈvɛriəbəl/",
+              "pos": "词组",
+              "words": [
+                "a",
+                "variable"
+              ],
+              "role": "宾语"
+            }
+          ],
+          "tip": "旧代码里仍常见 var。现在新代码更推荐用 let 或 const。"
+        },
+        "index": 67
+      },
+      {
+        "kind": "sentence",
+        "en": "The value is true or false.",
+        "cn": "这个值是 true 或 false。",
+        "image": "keywords.jpg",
+        "words": [
+          "The",
+          "value",
+          "is",
+          "true",
+          "or",
+          "false"
+        ],
+        "ipa": [
+          "/ðə/",
+          "/ˈvælju/",
+          "/ɪz/",
+          "/truː/",
+          "/ɔr/",
+          "/fɔls/"
+        ],
+        "pos": [
+          "冠词",
+          "名词",
+          "系动词",
+          "关键字",
+          "连词",
+          "关键字"
+        ],
+        "aliases": [
+          "这个值是true或false",
+          "这个值是 true 或 false",
+          "这个值是真或假"
+        ],
+        "analysis": {
+          "tokens": [
+            {
+              "text": "The value",
+              "ipa": "/ðə ˈvælju/",
+              "pos": "词组",
+              "words": [
+                "The",
+                "value"
+              ],
+              "role": "主语"
+            },
+            {
+              "text": "is",
+              "ipa": "/ɪz/",
+              "pos": "系动词",
+              "words": [
+                "is"
+              ],
+              "role": "谓语"
+            },
+            {
+              "text": "true or false",
+              "ipa": "/truː ɔr fɔls/",
+              "pos": "词组",
+              "words": [
+                "true",
+                "or",
+                "false"
+              ],
+              "role": "表语",
+              "note": "布尔值只有这两个。Python 里写成 True / False。"
+            }
+          ],
+          "tip": "布尔值只有 true 和 false 两种。Python 里首字母大写，写成 True 和 False。"
+        },
+        "index": 68
+      },
+      {
+        "kind": "sentence",
+        "en": "This is a for loop.",
+        "cn": "这是一个 for 循环。",
+        "image": "keywords.jpg",
+        "words": [
+          "This",
+          "is",
+          "a",
+          "for",
+          "loop"
+        ],
+        "ipa": [
+          "/ðɪs/",
+          "/ɪz/",
+          "/ə/",
+          "/fɔr/",
+          "/luːp/"
+        ],
+        "pos": [
+          "代词",
+          "系动词",
+          "冠词",
+          "关键字",
+          "名词"
+        ],
+        "aliases": [
+          "这是一个for循环",
+          "这是一个 for 循环",
+          "这是for循环"
+        ],
+        "analysis": {
+          "tokens": [
+            {
+              "text": "This",
+              "ipa": "/ðɪs/",
+              "pos": "代词",
+              "words": [
+                "This"
+              ],
+              "role": "主语"
+            },
+            {
+              "text": "is",
+              "ipa": "/ɪz/",
+              "pos": "系动词",
+              "words": [
+                "is"
+              ],
+              "role": "谓语"
+            },
+            {
+              "text": "a for loop",
+              "ipa": "/ə fɔr luːp/",
+              "pos": "词组",
+              "words": [
+                "a",
+                "for",
+                "loop"
+              ],
+              "role": "表语",
+              "note": "这里的 for 是循环关键字，不是「为了」。"
+            }
+          ],
+          "tip": "看到 for loop，就是 for 循环。这里的 for 不是介词「为了」。"
+        },
+        "index": 69
+      },
+      {
+        "kind": "sentence",
+        "en": "Break out of the while loop.",
+        "cn": "从 while 循环里跳出。",
+        "image": "keywords.jpg",
+        "words": [
+          "Break",
+          "out",
+          "of",
+          "the",
+          "while",
+          "loop"
+        ],
+        "ipa": [
+          "/breɪk/",
+          "/aʊt/",
+          "/əv/",
+          "/ðə/",
+          "/waɪl/",
+          "/luːp/"
+        ],
+        "pos": [
+          "关键字",
+          "副词",
+          "介词",
+          "冠词",
+          "关键字",
+          "名词"
+        ],
+        "aliases": [
+          "从while循环里跳出",
+          "从 while 循环里跳出",
+          "跳出这个while循环"
+        ],
+        "analysis": {
+          "tokens": [
+            {
+              "text": "Break out",
+              "ipa": "/breɪk aʊt/",
+              "pos": "词组",
+              "words": [
+                "Break",
+                "out"
+              ],
+              "role": "谓语",
+              "note": "这里的 break 是跳出循环，不是「休息」。"
+            },
+            {
+              "text": "of the while loop",
+              "ipa": "/əv ðə waɪl luːp/",
+              "pos": "词组",
+              "words": [
+                "of",
+                "the",
+                "while",
+                "loop"
+              ],
+              "role": "宾语",
+              "note": "while 是条件循环。"
+            }
+          ],
+          "tip": "要提前结束循环时，会用 break 跳出 while 或 for 循环。"
+        },
+        "index": 70
+      },
+      {
+        "kind": "sentence",
+        "en": "Use continue in the loop.",
+        "cn": "在循环里使用 continue。",
+        "image": "keywords.jpg",
+        "words": [
+          "Use",
+          "continue",
+          "in",
+          "the",
+          "loop"
+        ],
+        "ipa": [
+          "/juz/",
+          "/kənˈtɪnjuː/",
+          "/ɪn/",
+          "/ðə/",
+          "/luːp/"
+        ],
+        "pos": [
+          "动词",
+          "关键字",
+          "介词",
+          "冠词",
+          "名词"
+        ],
+        "aliases": [
+          "在循环里使用continue",
+          "在循环里使用 continue",
+          "循环里用continue"
+        ],
+        "analysis": {
+          "tokens": [
+            {
+              "text": "Use",
+              "ipa": "/juz/",
+              "pos": "动词",
+              "words": [
+                "Use"
+              ],
+              "role": "谓语"
+            },
+            {
+              "text": "continue",
+              "ipa": "/kənˈtɪnjuː/",
+              "pos": "关键字",
+              "words": [
+                "continue"
+              ],
+              "role": "宾语",
+              "note": "跳过本轮，进入下一轮。"
+            },
+            {
+              "text": "in the loop",
+              "ipa": "/ɪn ðə luːp/",
+              "pos": "词组",
+              "words": [
+                "in",
+                "the",
+                "loop"
+              ],
+              "role": "状语"
+            }
+          ],
+          "tip": "continue 会跳过本轮、直接进入下一轮循环，不是随口说的「继续」。"
+        },
+        "index": 71
+      },
+      {
+        "kind": "sentence",
+        "en": "Try this block and catch the error.",
+        "cn": "先 try 这段代码，再 catch 这个错误。",
+        "image": "keywords.jpg",
+        "words": [
+          "Try",
+          "this",
+          "block",
+          "and",
+          "catch",
+          "the",
+          "error"
+        ],
+        "ipa": [
+          "/traɪ/",
+          "/ðɪs/",
+          "/blɑk/",
+          "/ænd/",
+          "/kætʃ/",
+          "/ðə/",
+          "/ˈɛrər/"
+        ],
+        "pos": [
+          "关键字",
+          "限定词",
+          "名词",
+          "连词",
+          "关键字",
+          "冠词",
+          "名词"
+        ],
+        "aliases": [
+          "先try这段代码再catch这个错误",
+          "先 try 再 catch 这个错误",
+          "尝试这段代码并捕获错误"
+        ],
+        "analysis": {
+          "tokens": [
+            {
+              "text": "Try",
+              "ipa": "/traɪ/",
+              "pos": "关键字",
+              "words": [
+                "Try"
+              ],
+              "role": "谓语",
+              "note": "尝试执行可能出错的代码。"
+            },
+            {
+              "text": "this block",
+              "ipa": "/ðɪs blɑk/",
+              "pos": "词组",
+              "words": [
+                "this",
+                "block"
+              ],
+              "role": "宾语"
+            },
+            {
+              "text": "and",
+              "ipa": "/ænd/",
+              "pos": "连词",
+              "words": [
+                "and"
+              ]
+            },
+            {
+              "text": "catch",
+              "ipa": "/kætʃ/",
+              "pos": "关键字",
+              "words": [
+                "catch"
+              ],
+              "role": "谓语"
+            },
+            {
+              "text": "the error",
+              "ipa": "/ðə ˈɛrər/",
+              "pos": "词组",
+              "words": [
+                "the",
+                "error"
+              ],
+              "role": "宾语"
+            }
+          ],
+          "tip": "异常处理里常先 try 一段代码，再用 catch 接住错误。"
+        },
+        "index": 72
+      },
+      {
+        "kind": "sentence",
+        "en": "Raise an exception in Python.",
+        "cn": "在 Python 里 raise 一个异常。",
+        "image": "keywords.jpg",
+        "words": [
+          "Raise",
+          "an",
+          "exception",
+          "in",
+          "Python"
+        ],
+        "ipa": [
+          "/reɪz/",
+          "/ən/",
+          "/ɪkˈsɛpʃən/",
+          "/ɪn/",
+          "/ˈpaɪθɑn/"
+        ],
+        "pos": [
+          "关键字",
+          "冠词",
+          "名词",
+          "介词",
+          "名词"
+        ],
+        "aliases": [
+          "在Python里raise一个异常",
+          "在 Python 里 raise 一个异常",
+          "用raise抛出异常"
+        ],
+        "analysis": {
+          "tokens": [
+            {
+              "text": "Raise",
+              "ipa": "/reɪz/",
+              "pos": "关键字",
+              "words": [
+                "Raise"
+              ],
+              "role": "谓语",
+              "note": "Python 里抛出异常，不是「举起」。"
+            },
+            {
+              "text": "an exception",
+              "ipa": "/ən ɪkˈsɛpʃən/",
+              "pos": "词组",
+              "words": [
+                "an",
+                "exception"
+              ],
+              "role": "宾语"
+            },
+            {
+              "text": "in Python",
+              "ipa": "/ɪn ˈpaɪθɑn/",
+              "pos": "词组",
+              "words": [
+                "in",
+                "Python"
+              ],
+              "role": "状语"
+            }
+          ],
+          "tip": "在 Python 里抛出异常要写 raise，作用接近其他语言的 throw。"
+        },
+        "index": 73
+      },
+      {
+        "kind": "sentence",
+        "en": "The default case is here.",
+        "cn": "默认分支在这里。",
+        "image": "keywords.jpg",
+        "words": [
+          "The",
+          "default",
+          "case",
+          "is",
+          "here"
+        ],
+        "ipa": [
+          "/ðə/",
+          "/dɪˈfɔlt/",
+          "/keɪs/",
+          "/ɪz/",
+          "/hɪr/"
+        ],
+        "pos": [
+          "冠词",
+          "关键字",
+          "关键字",
+          "系动词",
+          "副词"
+        ],
+        "aliases": [
+          "默认分支在这里",
+          "default 分支在这里",
+          "默认的 case 在这里"
+        ],
+        "analysis": {
+          "tokens": [
+            {
+              "text": "The default case",
+              "ipa": "/ðə dɪˈfɔlt keɪs/",
+              "pos": "词组",
+              "words": [
+                "The",
+                "default",
+                "case"
+              ],
+              "role": "主语",
+              "note": "switch 里的默认分支。"
+            },
+            {
+              "text": "is",
+              "ipa": "/ɪz/",
+              "pos": "系动词",
+              "words": [
+                "is"
+              ],
+              "role": "谓语"
+            },
+            {
+              "text": "here",
+              "ipa": "/hɪr/",
+              "pos": "副词",
+              "words": [
+                "here"
+              ],
+              "role": "表语"
+            }
+          ],
+          "tip": "在 switch 里，前面的 case 都不匹配时，就会走到 default case。"
+        },
+        "index": 74
+      },
+      {
+        "kind": "sentence",
+        "en": "Use new to create an object.",
+        "cn": "用 new 创建一个对象。",
+        "image": "keywords.jpg",
+        "words": [
+          "Use",
+          "new",
+          "to",
+          "create",
+          "an",
+          "object"
+        ],
+        "ipa": [
+          "/juz/",
+          "/nuː/",
+          "/tuː/",
+          "/kriˈeɪt/",
+          "/ən/",
+          "/ˈɑbdʒɪkt/"
+        ],
+        "pos": [
+          "动词",
+          "关键字",
+          "介词",
+          "动词",
+          "冠词",
+          "名词"
+        ],
+        "aliases": [
+          "用new创建一个对象",
+          "用 new 创建一个对象",
+          "用new新建一个对象"
+        ],
+        "analysis": {
+          "tokens": [
+            {
+              "text": "Use",
+              "ipa": "/juz/",
+              "pos": "动词",
+              "words": [
+                "Use"
+              ],
+              "role": "谓语"
+            },
+            {
+              "text": "new",
+              "ipa": "/nuː/",
+              "pos": "关键字",
+              "words": [
+                "new"
+              ],
+              "role": "宾语",
+              "note": "新建对象实例，不是形容词「新的」。"
+            },
+            {
+              "text": "to create",
+              "ipa": "/tuː kriˈeɪt/",
+              "pos": "词组",
+              "words": [
+                "to",
+                "create"
+              ],
+              "role": "状语"
+            },
+            {
+              "text": "an object",
+              "ipa": "/ən ˈɑbdʒɪkt/",
+              "pos": "词组",
+              "words": [
+                "an",
+                "object"
+              ],
+              "role": "宾语"
+            }
+          ],
+          "tip": "看到 new Foo()，就是在新建一个对象。这里的 new 不是「新的」。"
+        },
+        "index": 75
+      },
+      {
+        "kind": "sentence",
+        "en": "This refers to the current object.",
+        "cn": "this 指的是当前对象。",
+        "image": "keywords.jpg",
+        "words": [
+          "This",
+          "refers",
+          "to",
+          "the",
+          "current",
+          "object"
+        ],
+        "ipa": [
+          "/ðɪs/",
+          "/rɪˈfɜrz/",
+          "/tuː/",
+          "/ðə/",
+          "/ˈkɜrənt/",
+          "/ˈɑbdʒɪkt/"
+        ],
+        "pos": [
+          "关键字",
+          "动词",
+          "介词",
+          "冠词",
+          "形容词",
+          "名词"
+        ],
+        "aliases": [
+          "this指的是当前对象",
+          "this 指的是当前对象",
+          "this指向当前对象"
+        ],
+        "analysis": {
+          "tokens": [
+            {
+              "text": "This",
+              "ipa": "/ðɪs/",
+              "pos": "关键字",
+              "words": [
+                "This"
+              ],
+              "role": "主语",
+              "note": "这里的 this 指当前对象，不是「这个」。"
+            },
+            {
+              "text": "refers to",
+              "ipa": "/rɪˈfɜrz tuː/",
+              "pos": "词组",
+              "words": [
+                "refers",
+                "to"
+              ],
+              "role": "谓语"
+            },
+            {
+              "text": "the current object",
+              "ipa": "/ðə ˈkɜrənt ˈɑbdʒɪkt/",
+              "pos": "词组",
+              "words": [
+                "the",
+                "current",
+                "object"
+              ],
+              "role": "宾语"
+            }
+          ],
+          "tip": "代码和报错里看到 this，多半是在说当前对象，不是日常英语的「这个」。"
+        },
+        "index": 76
+      },
+      {
+        "kind": "sentence",
+        "en": "Use def to define the function.",
+        "cn": "用 def 定义这个函数。",
+        "image": "keywords.jpg",
+        "words": [
+          "Use",
+          "def",
+          "to",
+          "define",
+          "the",
+          "function"
+        ],
+        "ipa": [
+          "/juz/",
+          "/dɛf/",
+          "/tuː/",
+          "/dɪˈfaɪn/",
+          "/ðə/",
+          "/ˈfʌŋkʃən/"
+        ],
+        "pos": [
+          "动词",
+          "关键字",
+          "介词",
+          "动词",
+          "冠词",
+          "名词"
+        ],
+        "aliases": [
+          "用def定义这个函数",
+          "用 def 定义这个函数",
+          "用def定义函数"
+        ],
+        "analysis": {
+          "tokens": [
+            {
+              "text": "Use",
+              "ipa": "/juz/",
+              "pos": "动词",
+              "words": [
+                "Use"
+              ],
+              "role": "谓语"
+            },
+            {
+              "text": "def",
+              "ipa": "/dɛf/",
+              "pos": "关键字",
+              "words": [
+                "def"
+              ],
+              "role": "宾语",
+              "note": "Python 里定义函数的关键字。"
+            },
+            {
+              "text": "to define",
+              "ipa": "/tuː dɪˈfaɪn/",
+              "pos": "词组",
+              "words": [
+                "to",
+                "define"
+              ],
+              "role": "状语"
+            },
+            {
+              "text": "the function",
+              "ipa": "/ðə ˈfʌŋkʃən/",
+              "pos": "词组",
+              "words": [
+                "the",
+                "function"
+              ],
+              "role": "宾语"
+            }
+          ],
+          "tip": "在 Python 里定义函数要写 def，后面跟函数名。"
+        },
+        "index": 77
+      },
+      {
+        "kind": "sentence",
+        "en": "Use func to define the function.",
+        "cn": "用 func 定义这个函数。",
+        "image": "keywords.jpg",
+        "words": [
+          "Use",
+          "func",
+          "to",
+          "define",
+          "the",
+          "function"
+        ],
+        "ipa": [
+          "/juz/",
+          "/fʌŋk/",
+          "/tuː/",
+          "/dɪˈfaɪn/",
+          "/ðə/",
+          "/ˈfʌŋkʃən/"
+        ],
+        "pos": [
+          "动词",
+          "关键字",
+          "介词",
+          "动词",
+          "冠词",
+          "名词"
+        ],
+        "aliases": [
+          "用func定义这个函数",
+          "用 func 定义这个函数",
+          "用func定义函数"
+        ],
+        "analysis": {
+          "tokens": [
+            {
+              "text": "Use",
+              "ipa": "/juz/",
+              "pos": "动词",
+              "words": [
+                "Use"
+              ],
+              "role": "谓语"
+            },
+            {
+              "text": "func",
+              "ipa": "/fʌŋk/",
+              "pos": "关键字",
+              "words": [
+                "func"
+              ],
+              "role": "宾语",
+              "note": "Go 等语言里定义函数的关键字。"
+            },
+            {
+              "text": "to define",
+              "ipa": "/tuː dɪˈfaɪn/",
+              "pos": "词组",
+              "words": [
+                "to",
+                "define"
+              ],
+              "role": "状语"
+            },
+            {
+              "text": "the function",
+              "ipa": "/ðə ˈfʌŋkʃən/",
+              "pos": "词组",
+              "words": [
+                "the",
+                "function"
+              ],
+              "role": "宾语"
+            }
+          ],
+          "tip": "在 Go 里定义函数要写 func，读作 /fʌŋk/。"
+        },
+        "index": 78
+      },
+      {
+        "kind": "sentence",
+        "en": "Check the type with typeof.",
+        "cn": "用 typeof 检查这个类型。",
+        "image": "keywords.jpg",
+        "words": [
+          "Check",
+          "the",
+          "type",
+          "with",
+          "typeof"
+        ],
+        "ipa": [
+          "/tʃɛk/",
+          "/ðə/",
+          "/taɪp/",
+          "/wɪð/",
+          "/ˈtaɪp ʌv/"
+        ],
+        "pos": [
+          "动词",
+          "冠词",
+          "名词",
+          "介词",
+          "关键字"
+        ],
+        "aliases": [
+          "用typeof检查这个类型",
+          "用 typeof 检查这个类型",
+          "用typeof看类型"
+        ],
+        "analysis": {
+          "tokens": [
+            {
+              "text": "Check",
+              "ipa": "/tʃɛk/",
+              "pos": "动词",
+              "words": [
+                "Check"
+              ],
+              "role": "谓语"
+            },
+            {
+              "text": "the type",
+              "ipa": "/ðə taɪp/",
+              "pos": "词组",
+              "words": [
+                "the",
+                "type"
+              ],
+              "role": "宾语"
+            },
+            {
+              "text": "with typeof",
+              "ipa": "/wɪð ˈtaɪp ʌv/",
+              "pos": "词组",
+              "words": [
+                "with",
+                "typeof"
+              ],
+              "role": "状语",
+              "note": "读作 type of。"
+            }
+          ],
+          "tip": "在 JavaScript 里常用 typeof 查看一个值的类型，读作 type of。"
+        },
+        "index": 79
+      },
+      {
+        "kind": "sentence",
+        "en": "This is a private property.",
+        "cn": "这是一个私有属性。",
+        "image": "keywords.jpg",
+        "words": [
+          "This",
+          "is",
+          "a",
+          "private",
+          "property"
+        ],
+        "ipa": [
+          "/ðɪs/",
+          "/ɪz/",
+          "/ə/",
+          "/ˈpraɪvɪt/",
+          "/ˈprɑpərti/"
+        ],
+        "pos": [
+          "代词",
+          "系动词",
+          "冠词",
+          "关键字",
+          "名词"
+        ],
+        "aliases": [
+          "这是一个私有属性",
+          "这是一个 private 属性",
+          "这是私有属性"
+        ],
+        "analysis": {
+          "tokens": [
+            {
+              "text": "This",
+              "ipa": "/ðɪs/",
+              "pos": "代词",
+              "words": [
+                "This"
+              ],
+              "role": "主语"
+            },
+            {
+              "text": "is",
+              "ipa": "/ɪz/",
+              "pos": "系动词",
+              "words": [
+                "is"
+              ],
+              "role": "谓语"
+            },
+            {
+              "text": "a private property",
+              "ipa": "/ə ˈpraɪvɪt ˈprɑpərti/",
+              "pos": "词组",
+              "words": [
+                "a",
+                "private",
+                "property"
+              ],
+              "role": "表语",
+              "note": "private 表示只在类内部能访问。"
+            }
+          ],
+          "tip": "看到 private property，说明这是私有属性，只在类内部能访问。"
+        },
+        "index": 80
+      },
+      {
+        "kind": "sentence",
+        "en": "Finally runs after try and catch.",
+        "cn": "finally 会在 try 和 catch 之后执行。",
+        "image": "keywords.jpg",
+        "words": [
+          "Finally",
+          "runs",
+          "after",
+          "try",
+          "and",
+          "catch"
+        ],
+        "ipa": [
+          "/ˈfaɪnəli/",
+          "/rʌnz/",
+          "/ˈæftər/",
+          "/traɪ/",
+          "/ænd/",
+          "/kætʃ/"
+        ],
+        "pos": [
+          "关键字",
+          "动词",
+          "介词",
+          "关键字",
+          "连词",
+          "关键字"
+        ],
+        "aliases": [
+          "finally会在try和catch之后执行",
+          "finally 会在 try 和 catch 之后执行",
+          "finally在try和catch之后运行"
+        ],
+        "analysis": {
+          "tokens": [
+            {
+              "text": "Finally",
+              "ipa": "/ˈfaɪnəli/",
+              "pos": "关键字",
+              "words": [
+                "Finally"
+              ],
+              "role": "主语",
+              "note": "try/catch 之后一定会执行。"
+            },
+            {
+              "text": "runs",
+              "ipa": "/rʌnz/",
+              "pos": "动词",
+              "words": [
+                "runs"
+              ],
+              "role": "谓语"
+            },
+            {
+              "text": "after try and catch",
+              "ipa": "/ˈæftər traɪ ænd kætʃ/",
+              "pos": "词组",
+              "words": [
+                "after",
+                "try",
+                "and",
+                "catch"
+              ],
+              "role": "状语"
+            }
+          ],
+          "tip": "finally 里的代码在 try 和 catch 之后一定会跑到，常用来做清理。"
+        },
+        "index": 81
+      },
+      {
+        "kind": "sentence",
+        "en": "None means there is no value.",
+        "cn": "None 表示没有值。",
+        "image": "keywords.jpg",
+        "words": [
+          "None",
+          "means",
+          "there",
+          "is",
+          "no",
+          "value"
+        ],
+        "ipa": [
+          "/nʌn/",
+          "/miːnz/",
+          "/ðɛr/",
+          "/ɪz/",
+          "/noʊ/",
+          "/ˈvælju/"
+        ],
+        "pos": [
+          "关键字",
+          "动词",
+          "引导词",
+          "系动词",
+          "限定词",
+          "名词"
+        ],
+        "aliases": [
+          "None表示没有值",
+          "None 表示没有值",
+          "None就是没有值"
+        ],
+        "analysis": {
+          "tokens": [
+            {
+              "text": "None",
+              "ipa": "/nʌn/",
+              "pos": "关键字",
+              "words": [
+                "None"
+              ],
+              "role": "主语",
+              "note": "Python 里的空值，读作 none。"
+            },
+            {
+              "text": "means",
+              "ipa": "/miːnz/",
+              "pos": "动词",
+              "words": [
+                "means"
+              ],
+              "role": "谓语"
+            },
+            {
+              "text": "there is no value",
+              "ipa": "/ðɛr ɪz noʊ ˈvælju/",
+              "pos": "词组",
+              "words": [
+                "there",
+                "is",
+                "no",
+                "value"
+              ],
+              "role": "宾语"
+            }
+          ],
+          "tip": "在 Python 里看到 None，就表示没有值，作用接近其他语言的 null。"
+        },
+        "index": 82
+      },
+      {
+        "kind": "sentence",
+        "en": "Elif is else if in Python.",
+        "cn": "elif 在 Python 里就是 else if。",
+        "image": "keywords.jpg",
+        "words": [
+          "Elif",
+          "is",
+          "else",
+          "if",
+          "in",
+          "Python"
+        ],
+        "ipa": [
+          "/ˈɛlɪf/",
+          "/ɪz/",
+          "/ɛls/",
+          "/ɪf/",
+          "/ɪn/",
+          "/ˈpaɪθɑn/"
+        ],
+        "pos": [
+          "关键字",
+          "系动词",
+          "关键字",
+          "关键字",
+          "介词",
+          "名词"
+        ],
+        "aliases": [
+          "elif在Python里就是else if",
+          "elif 就是 else if",
+          "elif是Python里的else if"
+        ],
+        "analysis": {
+          "tokens": [
+            {
+              "text": "Elif",
+              "ipa": "/ˈɛlɪf/",
+              "pos": "关键字",
+              "words": [
+                "Elif"
+              ],
+              "role": "主语",
+              "note": "Python 里的否则如果。"
+            },
+            {
+              "text": "is",
+              "ipa": "/ɪz/",
+              "pos": "系动词",
+              "words": [
+                "is"
+              ],
+              "role": "谓语"
+            },
+            {
+              "text": "else if",
+              "ipa": "/ɛls ɪf/",
+              "pos": "词组",
+              "words": [
+                "else",
+                "if"
+              ],
+              "role": "表语"
+            },
+            {
+              "text": "in Python",
+              "ipa": "/ɪn ˈpaɪθɑn/",
+              "pos": "词组",
+              "words": [
+                "in",
+                "Python"
+              ],
+              "role": "状语"
+            }
+          ],
+          "tip": "在 Python 里要写「否则如果」，用的是 elif，相当于其他语言的 else if。"
+        },
+        "index": 83
+      },
+      {
+        "kind": "sentence",
+        "en": "Delete this property.",
+        "cn": "删除这个属性。",
+        "image": "keywords.jpg",
+        "words": [
+          "Delete",
+          "this",
+          "property"
+        ],
+        "ipa": [
+          "/dɪˈliːt/",
+          "/ðɪs/",
+          "/ˈprɑpərti/"
+        ],
+        "pos": [
+          "关键字",
+          "限定词",
+          "名词"
+        ],
+        "aliases": [
+          "删除这个属性",
+          "删掉这个属性",
+          "delete 这个属性"
+        ],
+        "analysis": {
+          "tokens": [
+            {
+              "text": "Delete",
+              "ipa": "/dɪˈliːt/",
+              "pos": "关键字",
+              "words": [
+                "Delete"
+              ],
+              "role": "谓语",
+              "note": "删除对象的属性。"
+            },
+            {
+              "text": "this property",
+              "ipa": "/ðɪs ˈprɑpərti/",
+              "pos": "词组",
+              "words": [
+                "this",
+                "property"
+              ],
+              "role": "宾语"
+            }
+          ],
+          "tip": "在 JavaScript 里删除对象属性会写 delete，比如 delete user.name。"
+        },
+        "index": 84
+      },
+      {
+        "kind": "sentence",
+        "en": "This class extends the base class.",
+        "cn": "这个类继承了基类。",
+        "image": "keywords.jpg",
+        "words": [
+          "This",
+          "class",
+          "extends",
+          "the",
+          "base",
+          "class"
+        ],
+        "ipa": [
+          "/ðɪs/",
+          "/klæs/",
+          "/ɪkˈstɛndz/",
+          "/ðə/",
+          "/beɪs/",
+          "/klæs/"
+        ],
+        "pos": [
+          "代词",
+          "名词",
+          "关键字",
+          "冠词",
+          "名词",
+          "名词"
+        ],
+        "aliases": [
+          "这个类继承了基类",
+          "这个类 extends 了基类",
+          "这个类继承基类"
+        ],
+        "analysis": {
+          "tokens": [
+            {
+              "text": "This class",
+              "ipa": "/ðɪs klæs/",
+              "pos": "词组",
+              "words": [
+                "This",
+                "class"
+              ],
+              "role": "主语"
+            },
+            {
+              "text": "extends",
+              "ipa": "/ɪkˈstɛndz/",
+              "pos": "关键字",
+              "words": [
+                "extends"
+              ],
+              "role": "谓语",
+              "note": "表示继承。"
+            },
+            {
+              "text": "the base class",
+              "ipa": "/ðə beɪs klæs/",
+              "pos": "词组",
+              "words": [
+                "the",
+                "base",
+                "class"
+              ],
+              "role": "宾语"
+            }
+          ],
+          "tip": "看到 class Dog extends Animal，就是这个类继承了基类。"
+        },
+        "index": 85
+      },
+      {
+        "kind": "sentence",
+        "en": "Use self in this method.",
+        "cn": "在这个方法里使用 self。",
+        "image": "keywords.jpg",
+        "words": [
+          "Use",
+          "self",
+          "in",
+          "this",
+          "method"
+        ],
+        "ipa": [
+          "/juz/",
+          "/sɛlf/",
+          "/ɪn/",
+          "/ðɪs/",
+          "/ˈmɛθəd/"
+        ],
+        "pos": [
+          "动词",
+          "名词",
+          "介词",
+          "限定词",
+          "名词"
+        ],
+        "aliases": [
+          "在这个方法里使用self",
+          "在这个方法里使用 self",
+          "这个方法里用self"
+        ],
+        "analysis": {
+          "tokens": [
+            {
+              "text": "Use",
+              "ipa": "/juz/",
+              "pos": "动词",
+              "words": [
+                "Use"
+              ],
+              "role": "谓语"
+            },
+            {
+              "text": "self",
+              "ipa": "/sɛlf/",
+              "pos": "名词",
+              "words": [
+                "self"
+              ],
+              "role": "宾语",
+              "note": "Python 里表示当前实例。"
+            },
+            {
+              "text": "in this method",
+              "ipa": "/ɪn ðɪs ˈmɛθəd/",
+              "pos": "词组",
+              "words": [
+                "in",
+                "this",
+                "method"
+              ],
+              "role": "状语"
+            }
+          ],
+          "tip": "在 Python 的方法里，常用 self 指向当前实例，通常是第一个参数。"
+        },
+        "index": 86
+      },
+      {
+        "kind": "sentence",
+        "en": "The constructor is public.",
+        "cn": "这个构造函数是 public 的。",
+        "image": "keywords.jpg",
+        "words": [
+          "The",
+          "constructor",
+          "is",
+          "public"
+        ],
+        "ipa": [
+          "/ðə/",
+          "/kənˈstrʌktər/",
+          "/ɪz/",
+          "/ˈpʌblɪk/"
+        ],
+        "pos": [
+          "冠词",
+          "名词",
+          "系动词",
+          "关键字"
+        ],
+        "aliases": [
+          "这个构造函数是public的",
+          "这个构造函数是 public 的",
+          "构造函数是公有的"
+        ],
+        "analysis": {
+          "tokens": [
+            {
+              "text": "The constructor",
+              "ipa": "/ðə kənˈstrʌktər/",
+              "pos": "词组",
+              "words": [
+                "The",
+                "constructor"
+              ],
+              "role": "主语",
+              "note": "创建对象时执行的构造函数。"
+            },
+            {
+              "text": "is",
+              "ipa": "/ɪz/",
+              "pos": "系动词",
+              "words": [
+                "is"
+              ],
+              "role": "谓语"
+            },
+            {
+              "text": "public",
+              "ipa": "/ˈpʌblɪk/",
+              "pos": "关键字",
+              "words": [
+                "public"
+              ],
+              "role": "表语"
+            }
+          ],
+          "tip": "构造函数常被声明为 public，这样类外面才能用 new 来创建对象。"
+        },
+        "index": 87
+      },
+      {
+        "kind": "sentence",
+        "en": "Use composition instead of inheritance.",
+        "cn": "用组合代替继承。",
+        "image": "keywords.jpg",
+        "words": [
+          "Use",
+          "composition",
+          "instead",
+          "of",
+          "inheritance"
+        ],
+        "ipa": [
+          "/juz/",
+          "/ˌkɑmpəˈzɪʃən/",
+          "/ɪnˈstɛd/",
+          "/əv/",
+          "/ɪnˈhɛrɪtəns/"
+        ],
+        "pos": [
+          "动词",
+          "名词",
+          "副词",
+          "介词",
+          "名词"
+        ],
+        "aliases": [
+          "用组合代替继承",
+          "用组合而不是继承",
+          "优先用组合"
+        ],
+        "analysis": {
+          "tokens": [
+            {
+              "text": "Use",
+              "ipa": "/juz/",
+              "pos": "动词",
+              "words": [
+                "Use"
+              ],
+              "role": "谓语"
+            },
+            {
+              "text": "composition",
+              "ipa": "/ˌkɑmpəˈzɪʃən/",
+              "pos": "名词",
+              "words": [
+                "composition"
+              ],
+              "role": "宾语",
+              "note": "面向对象里的组合，不是泛泛的「组合」。"
+            },
+            {
+              "text": "instead of",
+              "ipa": "/ɪnˈstɛd əv/",
+              "pos": "词组",
+              "words": [
+                "instead",
+                "of"
+              ],
+              "role": "状语"
+            },
+            {
+              "text": "inheritance",
+              "ipa": "/ɪnˈhɛrɪtəns/",
+              "pos": "名词",
+              "words": [
+                "inheritance"
+              ],
+              "role": "宾语",
+              "note": "面向对象里的继承概念；实现时常用关键字 extends。"
+            }
+          ],
+          "tip": "面向对象里常说 Use composition instead of inheritance，也就是用组合代替继承。inheritance 是概念，extends 是实现它的关键字。"
+        },
+        "index": 88
+      },
+      {
+        "kind": "sentence",
+        "en": "This is an abstract class.",
+        "cn": "这是一个抽象类。",
+        "image": "keywords.jpg",
+        "words": [
+          "This",
+          "is",
+          "an",
+          "abstract",
+          "class"
+        ],
+        "ipa": [
+          "/ðɪs/",
+          "/ɪz/",
+          "/ən/",
+          "/ˈæbstrækt/",
+          "/klæs/"
+        ],
+        "pos": [
+          "代词",
+          "系动词",
+          "冠词",
+          "形容词",
+          "名词"
+        ],
+        "aliases": [
+          "这是一个抽象类",
+          "这是一个 abstract class",
+          "这是抽象类"
+        ],
+        "analysis": {
+          "tokens": [
+            {
+              "text": "This",
+              "ipa": "/ðɪs/",
+              "pos": "代词",
+              "words": [
+                "This"
+              ],
+              "role": "主语"
+            },
+            {
+              "text": "is",
+              "ipa": "/ɪz/",
+              "pos": "系动词",
+              "words": [
+                "is"
+              ],
+              "role": "谓语"
+            },
+            {
+              "text": "an abstract class",
+              "ipa": "/ən ˈæbstrækt klæs/",
+              "pos": "词组",
+              "words": [
+                "an",
+                "abstract",
+                "class"
+              ],
+              "role": "表语",
+              "note": "抽象类不能直接实例化。"
+            }
+          ],
+          "tip": "看到 abstract class，就是抽象类，不能直接 new，要由子类去实现。class 作为单词已在第 22 课「代码与报错」里。"
+        },
+        "index": 89
+      },
+      {
+        "kind": "sentence",
+        "en": "Main is the entry point.",
+        "cn": "main 是程序的运行入口。",
+        "image": "keywords.jpg",
+        "words": [
+          "Main",
+          "is",
+          "the",
+          "entry",
+          "point"
+        ],
+        "ipa": [
+          "/meɪn/",
+          "/ɪz/",
+          "/ðə/",
+          "/ˈɛntri/",
+          "/pɔɪnt/"
+        ],
+        "pos": [
+          "名词",
+          "系动词",
+          "冠词",
+          "名词",
+          "名词"
+        ],
+        "aliases": [
+          "main是程序的运行入口",
+          "main 是运行入口",
+          "main是入口函数"
+        ],
+        "analysis": {
+          "tokens": [
+            {
+              "text": "Main",
+              "ipa": "/meɪn/",
+              "pos": "名词",
+              "words": [
+                "Main"
+              ],
+              "role": "主语",
+              "note": "入口函数。"
+            },
+            {
+              "text": "is",
+              "ipa": "/ɪz/",
+              "pos": "系动词",
+              "words": [
+                "is"
+              ],
+              "role": "谓语"
+            },
+            {
+              "text": "the entry point",
+              "ipa": "/ðə ˈɛntri pɔɪnt/",
+              "pos": "词组",
+              "words": [
+                "the",
+                "entry",
+                "point"
+              ],
+              "role": "表语",
+              "note": "程序全部运行的入口。"
+            }
+          ],
+          "tip": "程序全部运行的入口就是 entry point，比如 Java 或 Go 的 main，或 Python 的 if __name__ == \"__main__\"。"
+        },
+        "index": 90
+      },
+      {
+        "kind": "sentence",
+        "en": "Encapsulation hides the details.",
+        "cn": "封装会隐藏内部细节。",
+        "image": "keywords.jpg",
+        "words": [
+          "Encapsulation",
+          "hides",
+          "the",
+          "details"
+        ],
+        "ipa": [
+          "/ɪnˌkæpsəˈleɪʃən/",
+          "/haɪdz/",
+          "/ðə/",
+          "/ˈditeɪlz/"
+        ],
+        "pos": [
+          "名词",
+          "动词",
+          "冠词",
+          "名词"
+        ],
+        "aliases": [
+          "封装会隐藏内部细节",
+          "封装隐藏细节",
+          "封装会把细节藏起来"
+        ],
+        "analysis": {
+          "tokens": [
+            {
+              "text": "Encapsulation",
+              "ipa": "/ɪnˌkæpsəˈleɪʃən/",
+              "pos": "名词",
+              "words": [
+                "Encapsulation"
+              ],
+              "role": "主语",
+              "note": "面向对象里的封装。"
+            },
+            {
+              "text": "hides",
+              "ipa": "/haɪdz/",
+              "pos": "动词",
+              "words": [
+                "hides"
+              ],
+              "role": "谓语"
+            },
+            {
+              "text": "the details",
+              "ipa": "/ðə ˈditeɪlz/",
+              "pos": "词组",
+              "words": [
+                "the",
+                "details"
+              ],
+              "role": "宾语"
+            }
+          ],
+          "tip": "封装的目的就是把内部细节藏起来，只对外提供必要的接口。interface 和 class 作为单词已在第 22 课「代码与报错」里。"
+        },
+        "index": 91
+      },
+      {
+        "kind": "sentence",
+        "en": "This is a generic type.",
+        "cn": "这是一个泛型类型。",
+        "image": "keywords.jpg",
+        "words": [
+          "This",
+          "is",
+          "a",
+          "generic",
+          "type"
+        ],
+        "ipa": [
+          "/ðɪs/",
+          "/ɪz/",
+          "/ə/",
+          "/dʒəˈnɛrɪk/",
+          "/taɪp/"
+        ],
+        "pos": [
+          "代词",
+          "系动词",
+          "冠词",
+          "名词",
+          "名词"
+        ],
+        "aliases": [
+          "这是一个泛型类型",
+          "这是一个 generic 类型",
+          "这是泛型"
+        ],
+        "analysis": {
+          "tokens": [
+            {
+              "text": "This",
+              "ipa": "/ðɪs/",
+              "pos": "代词",
+              "words": [
+                "This"
+              ],
+              "role": "主语"
+            },
+            {
+              "text": "is",
+              "ipa": "/ɪz/",
+              "pos": "系动词",
+              "words": [
+                "is"
+              ],
+              "role": "谓语"
+            },
+            {
+              "text": "a generic type",
+              "ipa": "/ə dʒəˈnɛrɪk taɪp/",
+              "pos": "词组",
+              "words": [
+                "a",
+                "generic",
+                "type"
+              ],
+              "role": "表语",
+              "note": "能适配多种类型。"
+            }
+          ],
+          "tip": "看到 generic type，就是泛型类型，比如 List<T>。type 作为单词已在第 22 课「代码与报错」里。"
+        },
+        "index": 92
+      },
+      {
+        "kind": "sentence",
+        "en": "Check the command configuration.",
+        "cn": "请查看命令配置。",
+        "image": "keywords.jpg",
+        "words": [
+          "Check",
+          "the",
+          "command",
+          "configuration"
+        ],
+        "ipa": [
+          "/tʃɛk/",
+          "/ðə/",
+          "/kəˈmænd/",
+          "/kənˌfɪɡjəˈreɪʃən/"
+        ],
+        "pos": [
+          "动词",
+          "冠词",
+          "名词",
+          "名词"
+        ],
+        "aliases": [
+          "请查看命令配置",
+          "请检查命令配置",
+          "看一下 command config"
+        ],
+        "analysis": {
+          "tokens": [
+            {
+              "text": "Check",
+              "ipa": "/tʃɛk/",
+              "pos": "动词",
+              "words": [
+                "Check"
+              ],
+              "role": "谓语"
+            },
+            {
+              "text": "the command configuration",
+              "ipa": "/ðə kəˈmænd kənˌfɪɡjəˈreɪʃən/",
+              "pos": "词组",
+              "words": [
+                "the",
+                "command",
+                "configuration"
+              ],
+              "role": "宾语",
+              "note": "要执行的命令或运行参数。"
+            }
+          ],
+          "tip": "要确认启动脚本或运行参数时，可以说 Check the command configuration。command 和 config 作为单词已在第 21 课「技术栈」里。"
+        },
+        "index": 93
+      }
+    ]
   }
 ]
