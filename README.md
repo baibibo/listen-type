@@ -31,3 +31,9 @@ python3 -m http.server 8080
 
 线上地址：https://baibibo.github.io/listen-type/
 
+
+## 自动发布
+
+推送到 `main` 分支，或在 GitHub 仓库的 Actions 里手动运行 **Deploy GitHub Pages**，就会更新线上页面：
+
+https://baibibo.github.io/listen-type/
