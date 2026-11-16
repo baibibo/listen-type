@@ -881,11 +881,12 @@ function renderHome() {
   } else {
     const hideCn = state.homeMode === "listen";
     const curI = currentWordIndex();
+    const allowSpeak = hideCn || state.homeMode !== "cn2en" || curI < 0;
     const hint = curI < 0 ? "全部正确" : state.statuses.includes("bad") ? "不对，再试一次" : "";
     const badge = !hideCn && listenedHere ? '<span class="badge">已听</span>' : "";
     stage = `
-      <img class="art" alt="" src="${escapeHtml(imageUrl(item.image))}" data-act="play-sentence">
-      <p class="cn">${hideCn ? "只听发音，按单词输入英文" : escapeHtml(state.homeMode === "cn2en" ? promptCnForEnglish(item) : item.cn)}${kindBadge(item)}${badge}${speakBtn()}</p>
+      <img class="art" alt="" src="${escapeHtml(imageUrl(item.image))}"${allowSpeak ? ' data-act="play-sentence"' : ""}>
+      <p class="cn">${hideCn ? "只听发音，按单词输入英文" : escapeHtml(state.homeMode === "cn2en" ? promptCnForEnglish(item) : item.cn)}${kindBadge(item)}${badge}${allowSpeak ? speakBtn() : ""}</p>
       ${renderWords()}
       <div class="hint ${curI < 0 ? "ok" : ""}">${escapeHtml(hint)}</div>
       ${analysisToggle(item, curI < 0)}`;
@@ -1165,7 +1166,7 @@ function registerSw() {
     window.location.reload();
   });
   navigator.serviceWorker
-    .register(assetUrl("sw.js"))
+    .register(assetUrl("sw.js"), { updateViaCache: "none" })
     .then((reg) => {
       void reg.update();
       document.addEventListener("visibilitychange", () => {

@@ -1,4 +1,4 @@
-const CACHE = "listen-type-pages-v5";
+const CACHE = "listen-type-pages-v6";
 const SHELL = [
   "./",
   "./index.html",
